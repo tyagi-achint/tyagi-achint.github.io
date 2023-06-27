@@ -1,0 +1,169 @@
+#mainContent {
+  width: 57%;
+  min-height: 100vh;
+  position: absolute;
+  right: 0;
+  padding: 15vh 2vw 10vh 2vh;
+}
+
+#mainContent .content {
+  padding: 20vh 2vw 3vh 2vw;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2);
+}
+
+#mainContent .headings {
+  margin-bottom: 2vh;
+  text-transform: uppercase;
+  font-size: 2.2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: ghostwhite;
+  opacity: 0.6;
+  letter-spacing: 2px;
+}
+#mainContent .name {
+  font-size: 5vw;
+  font-family: "Rowdies", cursive;
+  color: #ffecec;
+  text-align: right;
+}
+#mainContent .nameUnderline {
+  margin-bottom: 5vh;
+  border: none;
+  border-top: 0.5vh solid #9575de;
+  width: 45%;
+  margin-left: auto;
+  margin-right: 24%;
+  box-shadow: -8px 5px 10px rebeccapurple;
+}
+
+#mainContent .textUnderline {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 5vh !important;
+  width: 89%;
+  margin: auto;
+}
+#mainContent .information {
+  margin-bottom: 20vh;
+}
+#mainContent .information h2 {
+  text-align: justify;
+  padding-bottom: 10vh;
+  font-weight: 400;
+  color: #ffecec;
+  opacity: 0.8;
+  font-family: cursive;
+}
+
+#mainContent .social {
+  text-align: center;
+  margin: 5vh;
+  margin: 5vh;
+}
+#mainContent .social img {
+  background-color: #9ac5f4;
+  margin: 0 1vw;
+  width: 45px;
+  padding: 0.4vw;
+  border-radius: 10px;
+}
+
+#mainContent .social img:hover {
+  box-shadow: 0px 0px 10px #9575de;
+  width: 50px;
+}
+
+#mainContent .skills {
+  margin-bottom: 7vh;
+}
+#mainContent .skillSet {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 2% 0;
+  margin: auto;
+}
+
+#mainContent .skillSet .col {
+  width: 25%;
+  margin: 2% 4% 2% 4%;
+}
+#mainContent .skillSet .item-name {
+  margin: 10px;
+}
+#mainContent .skills .item {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2);
+}
+#mainContent .skills .item h5 {
+  font-size: 1vw;
+}
+#mainContent .skills .item:hover {
+  box-shadow: 0px 0px 7px #9575de;
+}
+#mainContent .skillSet .value {
+  font-size: 1vw;
+  padding: 3px 10px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+#mainContent .skills .skill-progress {
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+#mainContent .skills .progres {
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+#mainContent .about {
+  margin-bottom: 7vh;
+}
+#mainContent .aboutData {
+  width: 80%;
+  margin: auto;
+}
+#mainContent .aboutData h2 {
+  margin-bottom: 5vh;
+  font-family: "PT Serif", serif;
+  font-size: 2.5vw;
+}
+#mainContent .aboutData li {
+  margin-bottom: 2.5vh;
+  font-size: 2.1vw;
+  font-family: "PT Serif", serif;
+}
+#mainContent .aboutData span {
+  font-size: 2vw;
+  color: #999;
+}
+#mainContent .aboutData a {
+  font-size: 1.5vw;
+  color: #999;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: none;
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+#mainContent .aboutData a:hover {
+  border-color: #1d1d1d;
+  color: #1d1d1d;
+  background-color: rgba(255, 255, 255, 0.3);
+}

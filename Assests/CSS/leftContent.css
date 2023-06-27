@@ -1,0 +1,268 @@
+/* LEFT CONTENT  */
+#leftContent {
+  width: 41%;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#leftContent .menu-icon {
+  position: fixed;
+  top: 3%;
+  left: 2%;
+
+  z-index: 10;
+  font-size: xx-large;
+  color: #888;
+}
+
+/* Navbar  */
+#leftContent .navbar {
+  position: relative;
+
+  text-align: left;
+}
+
+#leftContent .panel {
+  position: fixed;
+  top: 0;
+  left: -50%;
+  width: 30%;
+  height: 100%;
+  background-color: #1d1d1d;
+}
+
+#leftContent .open {
+  left: 0;
+}
+
+#leftContent .navUl {
+  padding: 10% 2%;
+}
+
+a,
+li {
+  text-decoration: none !important;
+  list-style: none !important;
+  cursor: none !important;
+}
+
+#leftContent li a {
+  color: #fff;
+  padding: 1vw;
+}
+
+#leftContent li {
+  padding-bottom: 3vh;
+
+  font-family: "Bagel Fat One", cursive;
+  padding-left: 45%;
+  font-size: xx-large;
+  letter-spacing: 2px;
+}
+
+#leftContent li a:hover {
+  color: #4fc0d0;
+  border-radius: 20px;
+  background-color: #212121;
+  border: 1px solid #1c1c1c;
+}
+
+#leftContent h3 {
+  padding-top: 25%;
+  padding-left: 40%;
+  font-size: 18px;
+  color: #888;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.25px;
+}
+
+/* Profile  */
+
+#leftContent .profileContent .box,
+#leftContent .profileContent .box2 {
+  min-width: 65%;
+  min-height: 72%;
+  position: absolute;
+}
+
+#leftContent .box {
+  top: 8%;
+  left: 15%;
+  animation-name: animateBox;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#leftContent .box2 {
+  top: 13%;
+  left: 20%;
+  animation-name: animateBox2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#leftContent .profileCon {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 69%;
+}
+
+#leftContent h4 {
+  font-family: "Pacifico", cursive;
+  color: #fff;
+  opacity: 0.8;
+}
+
+#leftContent h2 {
+  font-family: "Gochi Hand", cursive;
+  font-size: 2.9vw;
+  letter-spacing: 4px;
+  animation: textAni 5s infinite;
+}
+
+#leftContent h1 {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.6);
+  top: 88%;
+  right: 7%;
+  font-weight: 400;
+  font-family: "Sacramento", cursive;
+  font-size: 3.4vw;
+}
+
+#leftContent .img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 56%;
+  min-height: 54%;
+  position: absolute;
+  top: 15%;
+  left: 22%;
+}
+
+#leftContent .social {
+  width: 100%;
+  text-align: center;
+  font-size: 8vh;
+}
+
+#leftContent a {
+  color: #4fc0d0;
+  padding-right: 1vw;
+}
+
+#leftContent .credit {
+  width: 100%;
+  text-align: center;
+  margin-top: 5vh;
+  font-size: larger;
+  text-decoration: underline;
+  font-family: cursive;
+  color: #888;
+}
+
+#leftContent .wave {
+  animation-name: wave-animation;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(-8deg);
+  }
+
+  50% {
+    transform: rotate(14deg);
+  }
+
+  100% {
+    transform: rotate(-8deg);
+  }
+}
+
+@keyframes animateBox {
+  0% {
+    border: 1px solid rgba(0, 191, 255, 0.6);
+    top: 8%;
+    left: 15%;
+  }
+
+  25% {
+    border: 1px solid rgba(255, 166, 0, 0.6);
+    top: 8%;
+    left: 20%;
+  }
+
+  50% {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    top: 13%;
+    left: 20%;
+  }
+
+  75% {
+    border: 1px solid #853eff;
+    top: 13%;
+    left: 15%;
+  }
+
+  100% {
+    border: 1px solid rgba(0, 191, 255, 0.6);
+    top: 8%;
+    left: 15%;
+  }
+}
+
+@keyframes animateBox2 {
+  0% {
+    border: 1px solid rgba(0, 191, 255, 0.6);
+    top: 13%;
+    left: 20%;
+  }
+
+  25% {
+    border: 1px solid rgba(255, 166, 0, 0.6);
+
+    top: 13%;
+    left: 15%;
+  }
+
+  50% {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    top: 8%;
+    left: 15%;
+  }
+
+  75% {
+    border: 1px solid #853eff;
+    top: 8%;
+    left: 20%;
+  }
+
+  100% {
+    border: 1px solid rgba(0, 191, 255, 0.6);
+    top: 13%;
+    left: 20%;
+  }
+}
+
+@keyframes textAni {
+  25%,
+  50% {
+    color: rgba(255, 166, 0, 0.6);
+  }
+
+  0%,
+  75%,
+  100% {
+    color: #853eff;
+  }
+}
