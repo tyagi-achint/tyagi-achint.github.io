@@ -1,22 +1,49 @@
 #mainContent {
   width: 57%;
-  min-height: 100vh;
+  min-height: 100%;
+  max-height: 100%;
   position: absolute;
   right: 0;
-  padding: 15vh 2vw 10vh 2vh;
+  padding: 15vh 2vw 0 2vh;
+}
+#mainContent .dayDate {
+  font-family: "Caprasimo", cursive;
+  color: #888;
+  font-size: 1.4vw;
+}
+#mainContent .location {
+  margin-bottom: 5vh;
+  text-align: right;
+  position: relative;
+  width: 26%;
+  margin-left: 73%;
+}
+#mainContent .location lord-icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#mainContent .location span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.2vw;
+  font-family: "Caprasimo", cursive;
 }
 
 #mainContent .content {
   padding: 20vh 2vw 3vh 2vw;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2);
 }
 
 #mainContent .headings {
   margin-bottom: 2vh;
   text-transform: uppercase;
-  font-size: 2.2vw;
+  font-size: 1.8vw;
   font-family: Arial, Helvetica, sans-serif;
   color: ghostwhite;
   opacity: 0.6;
@@ -151,19 +178,143 @@
 }
 #mainContent .aboutData a {
   font-size: 1.5vw;
-  color: #999;
-  background-color: transparent;
+  color: #4a4a4a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   cursor: none;
-  margin-left: 5px;
+  margin-left: 10px;
   padding: 5px;
   border-radius: 10px;
   font-weight: bold;
   font-family: cursive;
+  position: relative;
 }
 
-#mainContent .aboutData a:hover {
-  border-color: #1d1d1d;
-  color: #1d1d1d;
-  background-color: rgba(255, 255, 255, 0.3);
+#mainContent .aboutData .btn:link,
+#mainContent .aboutData .btn:visited {
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#mainContent .aboutData .btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#mainContent .aboutData .btn-white {
+  background-color: #c4dfdf;
+}
+
+#mainContent .aboutData .btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+#mainContent .aboutData .btn-white::after {
+  background-color: #c4dfdf;
+}
+
+#mainContent .aboutData .btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+#mainContent .aboutData .btn-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+#mainContent .about .funFact {
+  animation: factAni 2s linear infinite;
+}
+#mainContent .resumebox {
+  border: 2px solid #888;
+  text-align: center;
+  padding-bottom: 3vh;
+  width: 60%;
+  margin: 10vh auto;
+}
+#mainContent .resumebox p {
+  font-size: 1vw;
+  color: #888;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  padding: 0;
+}
+#mainContent .resumebox lord-icon {
+  width: 17vw;
+  height: 15vh;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#mainContent .resumebox:hover {
+  border-color: #433e3e;
+}
+
+.word-1 {
+  --color-1: #df8453;
+  --color-2: #4fc0d0;
+  --color-3: #98eecc;
+}
+
+.word-2 {
+  --color-1: #dbad4a;
+  --color-2: #64ccc5;
+  --color-3: #d8c4b6;
+}
+
+.word-3 {
+  --color-1: #b799ff;
+  --color-2: #79e0ee;
+  --color-3: #98eecc;
+}
+
+.word-4 {
+  --color-1: #967e76;
+  --color-2: #e1aeff;
+  --color-3: #4fc0d0;
+}
+
+@keyframes factAni {
+  0%,
+  32%,
+  100% {
+    color: var(--color-1);
+  }
+  33%,
+  65% {
+    color: var(--color-2);
+  }
+  66%,
+  99% {
+    color: var(--color-3);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }

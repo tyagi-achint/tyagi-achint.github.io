@@ -4,6 +4,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   cursor: none !important;
+  /* scroll-behavior: smooth; */
 }
 * {
   margin: 0;
@@ -20,6 +21,36 @@ body {
 }
 .onScrollprofile {
   width: 30% !important;
+}
+
+/* PROGRESS CIRCLE  */
+
+#progress-bar {
+  position: fixed;
+  bottom: 3%;
+  right: 1.5%;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: 3;
+  background-color: transparent;
+  display: none;
+}
+#progress-bar2 {
+  margin: 7.5% auto;
+  position: relative;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  z-index: 10;
+  background-color: #1d1d1d;
+}
+#progress-bar2 i {
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+  font-size: 2.5vw;
 }
 
 /* CURSOR  */
@@ -56,6 +87,12 @@ body {
   border: 5px solid #0a6ebd;
 }
 
+.btn-back-to-top:hover {
+  color: black;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
 @keyframes cursorAn {
   from {
     transform: scale(1);
@@ -86,3 +123,7 @@ body {
     opacity: 0;
   }
 }
+
+/* ____________
+___________________
+_____________________________ */
