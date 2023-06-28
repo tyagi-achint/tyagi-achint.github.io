@@ -14,6 +14,7 @@
     <link rel="manifest" href="Assests/favicon_io/site.webmanifest">
 
     <!-- FONTS   -->
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
@@ -28,6 +29,8 @@
     <link rel="stylesheet" href="Assests/CSS/style.css">
     <link rel="stylesheet" href="Assests/CSS/leftContent.css">
     <link rel="stylesheet" href="Assests/CSS/mainContent.css">
+
+
 </head>
 
 <body>
@@ -111,6 +114,14 @@
 
 
     <div id="mainContent">
+        <div class="dayDate">
+
+        </div>
+        <div class="location">
+            <lord-icon src="https://cdn.lordicon.com/fihkmkwt.json" trigger="loop" delay="700"
+                colors="primary:#1d1d1d,secondary:#9ac5f4">
+            </lord-icon> <span>Pune Maharashtra</span>
+        </div>
         <div class="content">
             <div class="information">
                 <p class="name">Achint Tyagi</p>
@@ -130,7 +141,7 @@
                 </div>
             </div>
             <div class="about">
-                <p class="headings">About</p>
+                <p class="headings">About Me</p>
                 <hr class="textUnderline">
                 <div class="aboutData">
                     <h2>A passionate frontend developer 👨‍💻 from India <img src="Assests/Images/004-india.png"></h2>
@@ -149,17 +160,32 @@
 
                         <li> - <img src="Assests/Images/001-ask.png"> Ask me about <b>Front-end, Designing.</i></b></li>
 
-                        <li> - <img src="Assests/Images/007-fun-fact.png"> Fun fact <span class="funFact">I think I am
+                        <li> - <img src="Assests/Images/007-fun-fact.png"> Fun fact <span class="funFact word-1">I think
+                            </span>
+                            <span class="funFact word-2">I am</span>
+                            <span class="funFact word-3">
                                 creative
-                                with
-                                colors.</span></li>
+                                with</span>
+                            <span class="funFact word-4">
+                                colors.</span>
+                        </li>
                     </ul>
 
                     <img src="Assests/Images/hire.png" width="37px">
                     <span>I’m available for a freelance job.</span>
-                    <a href="#contact">Hire me
+                    <a href="#contact" class="btn btn-white btn-animate">Hire me
                     </a>
                 </div>
+            </div>
+            <div class="resume">
+                <a href="Assests/Resume-Achint_Tyagi.pdf" target="_blank">
+                    <div class="resumebox">
+                        <lord-icon class="resumeIcon" src="https://cdn.lordicon.com/wxgbcyqg.json"
+                            colors="outline:#b8c0d8">
+                        </lord-icon>
+                        <p>Download Resume</p>
+                    </div>
+                </a>
             </div>
             <div class="skills">
                 <p class="headings">Skills</p>
@@ -266,16 +292,31 @@
             </div>
 
 
-            <div class="resume">
-                <div class="resumebox"></div>
-            </div>
-
-
-
         </div>
     </div>
+
     <div class="cursor"></div>
+
+
+
+    <div id="progress-bar">
+        <div id="progress-bar2"><i class=" fa-solid fa-person-arrow-up-from-line fa-bounce"></i></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPT  -->
     <script src="Assests/script.js"></script>
+    <!-- Lord ICON  -->
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 </body>
 
 </html>
