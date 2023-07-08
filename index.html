@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achint Tyagi</title>
+
+    <!-- FAVICON  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Assests/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assests/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assests/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="Assests/favicon_io/site.webmanifest">
+
+    <!-- FONTS   -->
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- ICONS  -->
+    <script src="https://kit.fontawesome.com/bf027e9367.js" crossorigin="anonymous"></script>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="Assests/CSS/candle.css">
+    <link rel="stylesheet" href="Assests/CSS/bottomContent.css">
+    <link rel="stylesheet" href="Assests/CSS/topContent.css">
+    <link rel="stylesheet" href="Assests/CSS/extraStyle.css">
+
+
+</head>
+
+
+<body>
+    <!-- Loading Page -->
+    <div id="loadingPage">
+        <svg class="pl" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
+                    <stop offset="0%" stop-color="#A5F1E9" />
+                    <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+                </linearGradient>
+                <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#A5F1E9" />
+                    <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+                </linearGradient>
+            </defs>
+            <circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36"
+                stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round"
+                transform="rotate(-90,100,100)" />
+            <line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36"
+                stroke-dasharray="1 165" stroke-linecap="round" />
+        </svg>
+
+    </div>
+    <!-- Body -->
+    <div class="pageContent">
+
+        <!-- BACKGROUND COLOR  -->
+        <div id="switchColor">
+            <i class="fa-solid fa-caret-up"></i>
+            <div class="colorPanel">
+                <ul>
+                    <li class="colorActive"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <!-- BACKGOUND EFFECT  -->
+        <div class="bg"></div>
+        <!-- CANDLE  -->
+        <div id="candleDiv">
+            <div class="wrapper">
+                <div class="candles">
+                    <div class="light__wave"></div>
+                    <div class="candle1">
+                        <div class="candle1__body">
+                            <div class="candle1__eyes">
+                                <span class="candle1__eyes-one"></span>
+                                <span class="candle1__eyes-two"></span>
+                            </div>
+                            <div class="candle1__mouth"></div>
+                        </div>
+                        <div class="candle1__stick"></div>
+                    </div>
+
+                    <div class="candle2">
+                        <div class="candle2__body">
+                            <div class="candle2__eyes">
+                                <div class="candle2__eyes-one"></div>
+                                <div class="candle2__eyes-two"></div>
+                            </div>
+                        </div>
+                        <div class="candle2__stick"></div>
+                    </div>
+                    <div class="candle2__fire"></div>
+                    <div class="sparkles-one"></div>
+                    <div class="sparkles-two"></div>
+                    <div class="candle__smoke-one"></div>
+                    <div class="candle__smoke-two"></div>
+                </div>
+                <div class="floor"></div>
+            </div>
+        </div>
+        <!-- Navbar  -->
+        <div id="navbar">
+            <i class="fa-solid fa-gear menu-icon" onclick="togglePanel()"></i>
+
+            <div class="panel">
+
+                <h3>Menu</h3>
+                <ul class="navUl">
+                    <li><a href="#about" onclick="
+                        togglePanel()">About</a></li>
+                    <li><a href="#projects" onclick="
+                        togglePanel()">Projects</a></li>
+                    <li><a href="#resume" onclick="
+                        togglePanel()">Resume</a></li>
+                    <li><a href="#contact" onclick="
+                        togglePanel()">Contact</a></li>
+                </ul>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/achint-tyagi/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/achinttyagi2001" target="_blank"><i
+                            class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://github.com/tyagi-achint" target="_blank"> <i
+                            class="fa-brands fa-square-github"></i></a>
+                    <a href="https://in.pinterest.com/achinttyagi/" target="_blank"><i
+                            class="fa-brands fa-square-pinterest"></i></a>
+                </div>
+                <div class="credit">Designed By Achint Tyagi</div>
+
+            </div>
+        </div>
+
+        <div id="topContainer">
+            <div id="leftContent">
+                <!-- Profile Section -->
+                <div class="profileContent">
+
+                    <div class=" box"></div>
+                    <div class="box2"></div>
+
+                    <div class="img" style="background-image: url(Assests/Images/Achint.jpg);"></div>
+                    <h1>Front-end Developer</h1>
+                </div>
+            </div>
+
+
+
+            <div id="rightContent">
+                <div class="dateLocation">
+                    <div class="dayDate">
+                    </div>
+                    <div class="location">
+                        <lord-icon src="https://cdn.lordicon.com/fihkmkwt.json" trigger="loop" delay="700"
+                            colors="primary:#1d1d1d,secondary:#9ac5f4">
+                        </lord-icon>
+                        <span>Pune Maharashtra</span>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="information">
+                        <h4>Hey <span class="wave"> 👋 </span>&nbsp; I am</h4>
+
+                        <p class="name">Achint Tyagi</p>
+                        <hr class="nameUnderline">
+                        <h3>Proficient in HTML5, CSS, Bootstrap, and JavaScript. I have an eye for design,
+                            creativity,
+                            and possess
+                            problem-solving skills, adaptability, and learning agility.</h3>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/achint-tyagi/" target="_blank"><img
+                                    src="Assests/Images/001-linkedin.png"></a>
+                            <a href="https://twitter.com/achinttyagi2001" target="_blank"><img
+                                    src="Assests/Images/002-twitter.png"></a>
+                            <a href="https://github.com/tyagi-achint" target="_blank"> <img
+                                    src="Assests/Images/003-github.png"></a>
+                            <a href="https://in.pinterest.com/achinttyagi/" target="_blank"><img
+                                    src="Assests/Images/004-pinterest.png"></a>
+                        </div>
+                    </div>
+
+
+
+                    <div id="about">
+                        <p class="headings">About Me</p>
+                        <hr class="textUnderline">
+                        <div class="aboutData">
+                            <h2>A passionate frontend developer 👨‍💻 from India <img
+                                    src="Assests/Images/004-india.png">
+                            </h2>
+                            <ul>
+                                <li> <img src="Assests/Images/006-talking.png"> I Speak <b><i>English,
+                                            Hindi.</i></b>
+                                </li>
+                                <li> <img src="Assests/Images/005-reading.png"> I’m currently learning
+                                    <b><i>ReactJS,
+                                            Python.</i></b>
+                                </li>
+                                <li> <img src="Assests/Images/003-collaboration.png"> I’m looking to collaborate in
+                                    <b>
+                                        <i>any
+                                            area
+                                            related to Web-Development.</i></b>
+                                </li>
+                                <li> <img src="Assests/Images/002-helping.png"> I’m looking for help with
+                                    <b><i>Learning
+                                            Back-end.</i></b>
+                                </li>
+
+
+                                <li> <img src="Assests/Images/001-ask.png"> Ask me about <b>Front-end,
+                                        Designing.</i></b>
+                                </li>
+
+                                <li> <img src="Assests/Images/007-fun-fact.png"> Fun fact <span class="funFact word-1">I
+                                        think
+                                    </span>
+                                    <span class="funFact word-2">I am</span>
+                                    <span class="funFact word-3">
+                                        creative
+                                        with</span>
+                                    <span class="funFact word-4">
+                                        colors.</span>
+                                </li>
+                            </ul>
+                            <div class="extraInfo">
+                                <p class="headings">What I can do?</p>
+                                <h5 style="word-spacing: 5px;opacity:.8; font-size:small;margin-bottom:5%">
+                                    I am a Front-end web developer, who can design beautiful and attractive website with
+                                    HTML, CSS,
+                                    JavaScript, with decent knowledge of colour for making Websites Templates.
+                                </h5>
+                                <p class="headings"> What am I doing currently?</p>
+                                <h5 style="word-spacing: 5px;opacity:.8; font-size:small;margin-bottom:5%">
+                                    Currently persuing my Masters in Computer Application and learning new programming
+                                    languages like Java, Python, ReactJS, MySQL, PHP and seeking role as Front-end
+                                    developer.
+                                </h5>
+
+
+                            </div>
+
+                            <img src="Assests/Images/hire.png" width="37px">
+                            <span>I’m available for a freelance job.</span>
+                            <a href="#contact" class="btn btn-white btn-animate">Hire me
+                            </a>
+                        </div>
+                    </div>
+                    <div class="education">
+                        <p class="headings">Education</p>
+                        <hr class="textUnderline">
+
+                        <ul>
+                            <li class="eduItem">
+                                <div class="item_top">
+                                    <h5>MIT World Peace University Pune</h5>
+                                    <span>(2012 — 2024)</span>
+                                </div>
+                                <h3>Master of Computer Application (Science)</h3>
+                            </li>
+                            <li class="eduItem">
+                                <div class="item_top">
+                                    <h5>Chaudhary Charan Singh University Meerut</h5>
+                                    <span>(2019-2022)</span>
+                                </div>
+                                <h3>Bachelor of Computer Application (Computer Science)</h3>
+                            </li>
+                            <li class="eduItem">
+                                <div class="item_top">
+                                    <h5>Central Board of Secondary Education
+                                    </h5>
+                                    <span>(2017-2019)</span>
+                                </div>
+                                <h3>Higher Secondary School Certificate</h3>
+                            </li>
+                            <li class="eduItem">
+                                <div class="item_top">
+                                    <h5>Central Board of Secondary Education
+                                    </h5>
+                                    <span>(2017)</span>
+                                </div>
+                                <h3>Secondary School Certificate</h3>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="skills">
+                        <p class="headings">Skills</p>
+                        <hr class="textUnderline">
+                        <div class="skillSet">
+
+                            <div class="col">
+                                <div class="item">
+                                    <div class="item-name">
+                                        <img src="Assests/Images/004-python.png">
+                                        <h5>Python</h5>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <span class="progres" data-value="55%" style="width: 55%;"></span>
+                                    </div>
+                                    <span class="value">55%</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="item">
+                                    <div class="item-name">
+                                        <img src="Assests/Images/002-javascript.png">
+                                        <h5>JavaScript</h5>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <span class="progres" data-value="75%" style="width: 75%;"></span>
+                                    </div>
+                                    <span class="value">75%</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="item">
+                                    <div class="item-name">
+                                        <img src="Assests/Images/006-java.png">
+                                        <h5>Java</h5>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <span class="progres" data-value="50%" style="width: 50%;"></span>
+                                    </div>
+                                    <span class="value">50%</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="item">
+                                    <div class="item-name">
+                                        <img src="Assests/Images/008-react.png">
+                                        <h5>ReactJS</h5>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <span class="progres" data-value="20%" style="width: 20%;"></span>
+                                    </div>
+                                    <span class="value">20%</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="item">
+                                    <div class="item-name">
+                                        <img src="Assests/Images/005-html-5.png">
+                                        <h5>HTML</h5>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <span class="progres" data-value="95%" style="width: 95%;"></span>
+                                    </div>
+                                    <span class="value">95%</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="item">
+                                    <div class="item-name">
+                                        <img src="Assests/Images/003-css-3.png">
+                                        <h5>CSS</h5>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <span class="progres" data-value="90%" style="width: 90%;"></span>
+                                    </div>
+                                    <span class="value">90%</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="item">
+                                    <div class="item-name">
+                                        <img src="Assests/Images/001-bootstrap.png">
+                                        <h5>Bootstrap</h5>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <span class="progres" data-value="85%" style="width: 85%;"></span>
+                                    </div>
+                                    <span class="value">85%</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="item">
+                                    <div class="item-name">
+                                        <img src="Assests/Images/007-wordpress.png">
+                                        <h5>WordPress</h5>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <span class="progres" data-value="60%" style="width: 60%;"></span>
+                                    </div>
+                                    <span class="value">60%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <p class="headings">Experience</p>
+                        <hr class="textUnderline">
+                        <ul>
+                            <li class="expItem">
+                                <div class="item_top">
+                                    <h4>OctaNet</h4>
+                                    <span>(JUN 2023-JUL 2023)</span>
+                                </div>
+                                <h3>Web Developer Intern</h3>
+                                <p>Successfully developed a webpage with features for creating, editing, and
+                                    organizing digital notes and analyzed and cloned a website.
+                                </p>
+                            </li>
+                            <li class="expItem">
+                                <div class="item_top">
+                                    <h4>Dharohar</h4>
+                                    <span>(JUN 2021-Aug 2021)</span>
+                                </div>
+                                <h3>WordPress Developer</h3>
+                                <p>Designed and developed a fully functional WordPress website, including custom themes,
+                                    plugins, and responsive design. Also created a visually appealing logo that captured
+                                    the
+                                    brand identity effectively.
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div id="resume">
+                        <p class="headings">Resume</p>
+                        <hr class="textUnderline">
+                        <a href="Assests/Resume-Achint_Tyagi.pdf" target="_blank">
+                            <div class="resumebox">
+                                <lord-icon class="resumeIcon" src="https://cdn.lordicon.com/wxgbcyqg.json"
+                                    colors="outline:#b8c0d8">
+                                </lord-icon>
+                                <p>Download Resume</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div id="bottomContainer">
+            <div class="content">
+                <div id="certificates">
+                    <p class="headings">Certificates</p>
+                    <hr class="textUnderline">
+                    <div class="container">
+                        <ul class="cards">
+                            <li class="card">
+                                <div class="cardImg" style="background-image: url(Assests/Images/octaNet.jpg);">
+                                </div>
+                                <div class="card-content">
+                                    <p>Web Development Internship</p>
+                                </div>
+                                <h3 class="card-title">OctaNet</h3>
+                                <a target="_blank" href="Assests/Certificates/OctaNet.pdf" class="card-link">View</a>
+                            </li>
+                            <li class="card">
+                                <div class="cardImg" style="background-image: url(Assests/Images/FullStack.jpg);">
+                                </div>
+                                <div class="card-content">
+                                    <p>Full Stack Development</p>
+                                </div>
+                                <h3 class="card-title">Unschool</h3>
+                                <a target="_blank"
+                                    href="Assests/Certificates/Achint Tyagi_Full Stack Development_Unschool Certificate2020.pdf"
+                                    class="card-link">View</a>
+                            </li>
+                            <li class="card">
+                                <div class="cardImg" style="background-image: url(Assests/Images/EthicalHacking.jpg);">
+                                </div>
+                                <div class="card-content">
+                                    <p>Ethical Hacking</p>
+                                </div>
+                                <h3 class="card-title">Unschool</h3>
+                                <a target="_blank"
+                                    href="Assests/Certificates/Ethical Hacking_Unschool Certificate2020.pdf"
+                                    class="card-link">View</a>
+                            </li>
+                            <li class="card">
+                                <div class="cardImg"
+                                    style="background-image: url(Assests/Images/ProjectBootstrap.jpg);">
+                                </div>
+                                <div class="card-content">
+                                    <p>Minor Project with BootStrap</p>
+                                </div>
+                                <h3 class="card-title">Unschool</h3>
+                                <a target="_blank"
+                                    href="Assests/Certificates/Project Completion Certificate_Achint Tyagi_Unschool2020(1).pdf"
+                                    class="card-link">View</a>
+                            </li>
+                            <li class="card">
+                                <div class="cardImg" style="background-image: url(Assests/Images/ProjectReact.jpg);">
+                                </div>
+                                <div class="card-content">
+                                    <p>Major Project with ReactJS</p>
+                                </div>
+                                <h3 class="card-title">Unschool</h3>
+                                <a target="_blank"
+                                    href="Assests/Certificates/Project Completion Certificate_Achint Tyagi_Unschool2020(2).pdf"
+                                    class="card-link">View</a>
+                            </li>
+                            <li class="card">
+                                <div class="cardImg" style="background-image: url(Assests/Images/Python.jpg);">
+                                </div>
+                                <div class="card-content">
+                                    <p>Python</p>
+                                </div>
+                                <h3 class="card-title">Udemy</h3>
+                                <a target="_blank" href="Assests/Certificates/Udemy-Python.pdf"
+                                    class="card-link">View</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div id="projects">
+                    <p class="headings">Projects</p>
+                    <hr class="textUnderline">
+                    <br>
+                    <p class="headings">
+                        To explore more of my projects, please visit <a target="_blank"
+                            href="https://github.com/tyagi-achint">@GitHub</a>
+                    </p>
+                    <br>
+                    <div class="container">
+                        <ul class="cards">
+                            <li class="card">
+                                <div class="cardData">
+                                    <div class="cardImg"
+                                        style="background-image: url(Assests/Images/PortfolioWebsite.jpg);">
+
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Portfolio Website</p>
+                                    </div>
+                                    <h3 class="card-title">HTML & CSS</h3>
+
+                                </div>
+                                <a target="_blank" href="https://tyagi-achint.github.io/Portfolio/"
+                                    class="card-link">View</a>
+                                <div class="discripition">
+                                    <p>Welcome to my portfolio website, a showcase of my creative work. With a clean and
+                                        visually appealing design, I present my projects and accomplishments in a
+                                        professional and captivating manner, highlighting my skills and expertise.</p>
+                                </div>
+
+
+
+                            </li>
+                            <li class="card">
+                                <div class="cardData">
+                                    <div class="cardImg"
+                                        style="background-image: url(Assests/Images/SquareOfNumber.jpg)">
+
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Square of Number</p>
+                                    </div>
+                                    <h3 class="card-title">JavaScript</h3>
+
+                                </div>
+                                <a target="_blank" href="https://tyagi-achint.github.io/Square/"
+                                    class="card-link">View</a>
+
+                                <div class="discripition">
+                                    <p>
+                                        Explore a dynamic JavaScript-powered website that displays the squares of even
+                                        numbers up to 40 and provides an interactive box for you to input any number and
+                                        instantly see its square value.</p>
+                                </div>
+
+
+
+                            </li>
+                            <li class="card">
+                                <div class="cardData">
+                                    <div class="cardImg"
+                                        style="background-image: url(Assests/Images/SimpleGamesWebsite.jpg);">
+
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Simple Games Website</p>
+                                    </div>
+                                    <h3 class="card-title">JavaScript</h3>
+
+                                </div>
+                                <a target="_blank" href="https://tyagi-achint.github.io/StrawHats/index.html"
+                                    class="card-link">View</a>
+                                <div class="discripition">
+                                    <p>Beat boredom with a captivating website featuring a collection of entertaining
+                                        games
+                                        designed using JavaScript, HTML, and CSS. Dive into a world of fun and challenge
+                                        yourself with various interactive games that will keep you entertained for
+                                        hours.
+                                    </p>
+                                </div>
+
+
+
+                            </li>
+                            <li class="card">
+                                <div class="cardData">
+                                    <div class="cardImg" style="background-image: url(Assests/Images/MemoryGame.jpg);">
+
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Memory Game</p>
+                                    </div>
+                                    <h3 class="card-title">JavaScript</h3>
+
+                                </div>
+                                <a target="_blank" href="https://tyagi-achint.github.io/javascript-simonGame/"
+                                    class="card-link">View</a>
+                                <div class="discripition">
+                                    <p>Put your memory skills to the test on this JavaScript-powered website, featuring
+                                        four
+                                        color blocks. Follow the computer's sequence by pressing the blocks in the
+                                        correct
+                                        order, challenging your memory and concentration abilities for an addictive
+                                        gameplay
+                                        experience.</p>
+                                </div>
+
+
+
+                            </li>
+                            <li class="card">
+                                <div class="cardData">
+                                    <div class="cardImg" style="background-image: url(Assests/Images/Drums.jpg);">
+
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Drums</p>
+                                    </div>
+                                    <h3 class="card-title">JavaScript</h3>
+
+                                </div>
+                                <a target="_blank" href="https://tyagi-achint.github.io/javascript-drumSound/"
+                                    class="card-link">View</a>
+                                <div class="discripition">
+                                    <p>Discover a fun and engaging website built with JavaScript. Play virtual drums by
+                                        pressing buttons or letters, creating awesome sounds and unleashing your inner
+                                        musician.</p>
+                                </div>
+
+
+
+                            </li>
+                            <li class="card">
+                                <div class="cardData">
+                                    <div class="cardImg"
+                                        style="background-image: url(Assests/Images/WebsiteClone.jpg);">
+
+                                    </div>
+                                    <div class="card-content">
+                                        <p>WebsiteClone</p>
+                                    </div>
+                                    <h3 class="card-title">BootStrap</h3>
+
+                                </div>
+                                <a target="_blank" href="https://tyagi-achint.github.io/bootstrap-website/index.html"
+                                    class="card-link">View</a>
+
+                                <div class="discripition">
+                                    <p>Discover a stunning website clone built with Bootstrap, CSS, and HTML. Experience
+                                        the familiarity of a popular website, recreated with precision and enhanced with
+                                        the
+                                        power of Bootstrap, delivering style.</p>
+                                </div>
+
+
+
+                            </li>
+                            <li class="card">
+                                <div class="cardData">
+                                    <div class="cardImg" style="background-image: url(Assests/Images/E-com.jpg);">
+
+                                    </div>
+                                    <div class="card-content">
+                                        <p>E-com</p>
+                                    </div>
+                                    <h3 class="card-title">WordPress</h3>
+
+                                </div>
+                                <a target="_blank" href="https://dharohar.shop/" class="card-link">View</a>
+                                <div class="discripition">
+                                    <p>Discover the essence of an e-commerce website, once thriving on WordPress, which
+                                        provided a seamless shopping experience with a user-friendly interface, secure
+                                        transactions, and a diverse range of products. Although no longer active.</p>
+                                </div>
+
+
+
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+
+                <div id="contact">
+                    <p class="headings">Contact</p>
+                    <hr class="textUnderline">
+
+
+                    <div class="form">
+                        <div class="textPart">
+                            <p class="contactp1">Get in touch</p>
+                            <hr class="textUnderline">
+
+
+                            <p class="contactp2">
+                                If you would like to work with me or just want to get in touch, please feel free to
+                                contact
+                                me.
+                                <br>
+
+                                achinttyagi001@gmail.com
+                            </p>
+                            <p id="contactColorText">
+                                I'd love to hear from you!
+                            </p>
+
+                        </div>
+                        <form onsubmit="sendEmail();  return false">
+
+                            <div class="inputName">
+                                <label for="Name"><i class="fa-regular fa-user"></i></label>
+                                <input type="text" id="Name" placeholder='Name' onfocus="changeBorder(this)"
+                                    onblur="removeBorder(this)" required>
+                            </div>
+                            <div class="inputEmail">
+                                <i class="fa-regular fa-envelope"></i>
+                                <input type="email" placeholder="E-mail" onfocus="changeBorder(this)"
+                                    onblur="removeBorder(this)" required>
+                            </div>
+                            <textarea id="formMessage" rows="7" placeholder="Message" required></textarea>
+                            <div class="button">
+                                <button type="reset">Clear</button>
+                                <button type="submit">Send</button>
+                            </div>
+
+
+
+
+                        </form>
+
+
+
+
+
+
+                    </div>
+                    <div id="afterForm">
+                        <div class="afterDiv">
+                            <div class="textPart">
+                                <div class="success-msg">
+                                    <i class="fa fa-check"></i>
+                                    Your Message has been sent successfully.
+                                </div>
+                                <p>if you wish to send a new message</p>
+
+
+                                <button onClick="window.location.reload();"><a href="#contact"></a>Click Me</button>
+                            </div>
+                            <!-- SVG  -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 563" fill="none">
+                                <g id="envelope">
+                                    <g id="g304">
+                                        <path id="path306"
+                                            d="M249.266 298.798L351.208 218.764C357.652 213.705 366.657 213.705 373.102 218.764L475.045 298.798V432.924H249.266V298.798Z"
+                                            fill="#FF9004" />
+                                    </g>
+                                    <path id="path308" d="M448.926 227.706H275.382V421.076H448.926V227.706Z"
+                                        fill="#FAFAFA" />
+                                    <path id="path310" d="M438.481 239.346H285.831V245.241H438.481V239.346Z"
+                                        fill="#DCDCDC" />
+                                    <path id="path312" d="M415.561 251.195H285.831V257.09H415.561V251.195Z"
+                                        fill="#DCDCDC" />
+                                    <path id="path314" d="M394.51 263.044H285.831V268.939H394.51V263.044Z"
+                                        fill="#DCDCDC" />
+                                    <path id="path316" d="M394.51 285.792H285.831V291.688H394.51V285.792Z"
+                                        fill="#DCDCDC" />
+                                    <path id="path318" d="M366.443 297.167H285.831V303.062H366.443V297.167Z"
+                                        fill="#DCDCDC" />
+                                    <path id="path320" d="M442.769 321H362.156V326.896H442.769V321Z" fill="#DCDCDC" />
+                                    <path id="path322" d="M442.768 332.609H377.201V338.504H442.768V332.609Z"
+                                        fill="#DCDCDC" />
+                                    <g id="g324">
+                                        <path id="path326" d="M362.155 365.9L249.265 298.877V432.924L362.155 365.9Z"
+                                            fill="#FFAE35" />
+                                    </g>
+                                    <g id="g328">
+                                        <path id="path330" d="M362.156 365.9L475.045 298.877V432.924L362.156 365.9Z"
+                                            fill="#FFAE35" />
+                                    </g>
+                                    <g id="g332">
+                                        <path id="path334"
+                                            d="M351.209 352.89L249.267 432.924H475.044L373.102 352.89C366.658 347.831 357.652 347.831 351.209 352.89Z"
+                                            fill="#FFBF69" />
+                                    </g>
+                                </g>
+                                <g id="g348">
+                                    <path id="path350"
+                                        d="M185.705 159.357C185.994 158.402 185.854 157.315 185.28 156.095C184.719 154.898 183.98 154.112 183.067 153.736C182.152 153.361 181.213 153.405 180.251 153.868C179.287 154.333 178.667 155.04 178.388 155.99C178.109 156.941 178.251 158.015 178.813 159.212C179.375 160.409 180.11 161.203 181.02 161.595C181.927 161.986 182.863 161.951 183.826 161.487C184.789 161.022 185.415 160.312 185.705 159.357ZM184.018 139.899C186.987 140.019 189.648 140.858 192.003 142.415C194.358 143.972 196.169 146.103 197.439 148.81C198.376 150.805 198.868 152.668 198.915 154.398C198.964 156.13 198.62 157.627 197.886 158.892C197.151 160.158 196.083 161.127 194.682 161.803C193.522 162.361 192.412 162.597 191.351 162.51C190.29 162.423 189.34 161.997 188.499 161.234C188.332 163.679 187.01 165.499 184.538 166.691C183.247 167.313 181.88 167.543 180.435 167.382C178.991 167.222 177.639 166.671 176.378 165.728C175.116 164.786 174.101 163.494 173.331 161.853C172.56 160.212 172.207 158.602 172.27 157.021C172.334 155.441 172.761 154.037 173.555 152.812C174.35 151.588 175.402 150.658 176.716 150.026C178.642 149.097 180.458 148.996 182.169 149.723L181.404 148.093L186.755 145.514L191.517 155.66C191.851 156.368 192.222 156.816 192.63 157C193.038 157.183 193.46 157.17 193.898 156.96C195.278 156.295 195.16 154.244 193.547 150.807C192.558 148.7 191.191 147.062 189.448 145.89C187.703 144.718 185.729 144.098 183.524 144.033C181.32 143.967 179.056 144.493 176.737 145.61C174.438 146.718 172.631 148.201 171.317 150.058C170.001 151.916 169.265 153.963 169.108 156.2C168.949 158.438 169.386 160.655 170.416 162.85C171.468 165.09 172.892 166.864 174.687 168.175C176.483 169.485 178.493 170.207 180.719 170.346C182.943 170.483 185.205 169.998 187.503 168.891C189.845 167.763 191.793 166.226 193.349 164.28L196.235 167.254C195.479 168.216 194.473 169.176 193.219 170.134C191.964 171.092 190.636 171.908 189.237 172.583C186.063 174.113 182.955 174.794 179.912 174.629C176.868 174.464 174.138 173.537 171.722 171.846C169.304 170.157 167.414 167.859 166.05 164.954C164.698 162.072 164.144 159.149 164.393 156.189C164.639 153.228 165.671 150.494 167.487 147.988C169.301 145.481 171.807 143.458 175.003 141.918C178.045 140.453 181.05 139.779 184.018 139.899Z"
+                                        fill="#ADE0EC" />
+                                </g>
+                                <g id="g352">
+                                    <path id="path354"
+                                        d="M478.281 145.979L473.499 145.088L471.809 150.637L476.591 151.528L478.281 145.979ZM483.567 146.965L481.877 152.514L486.737 153.418L485.812 158.499L480.333 157.478L478.528 163.209L473.241 162.224L475.046 156.492L470.263 155.601L468.46 161.331L463.174 160.347L464.977 154.616L460.079 153.702L461.001 148.622L466.522 149.65L468.214 144.102L463.314 143.19L464.237 138.109L469.759 139.138L471.562 133.407L476.848 134.393L475.043 140.124L479.826 141.015L481.629 135.284L486.917 136.269L485.112 142.001L490.01 142.913L489.088 147.994L483.567 146.965Z"
+                                        fill="#ADE0EC" />
+                                </g>
+                                <g id="star1">
+                                    <path id="path378"
+                                        d="M18.666 335.315C18.2493 335.154 17.8325 335.016 17.4145 334.901C17.3001 334.484 17.166 334.067 17.0096 333.649C16.3392 331.968 15.461 330.289 13.6929 328.61C11.9247 330.289 11.0466 331.968 10.3761 333.649C10.2171 334.069 10.0816 334.492 9.96728 334.913C9.55186 335.028 9.13514 335.167 8.71972 335.327C7.06201 336.006 5.4043 336.896 3.74658 338.687C5.4043 340.479 7.06201 341.369 8.71972 342.048C9.13251 342.206 9.54398 342.342 9.95676 342.458C10.0698 342.882 10.2052 343.304 10.3643 343.725C11.0321 345.406 11.9142 347.085 13.6929 348.765C15.4715 347.085 16.3536 345.406 17.0214 343.725C17.1779 343.308 17.3133 342.89 17.4263 342.47C17.8391 342.354 18.2532 342.22 18.666 342.058C20.3237 341.383 21.9814 340.489 23.6391 338.687C21.9814 336.885 20.3237 335.991 18.666 335.315Z"
+                                        fill="#ADE0EC" />
+                                </g>
+                                <g id="star4">
+                                    <path id="path414"
+                                        d="M659.175 279.551C658.966 279.47 658.757 279.402 658.546 279.344C658.49 279.135 658.423 278.925 658.344 278.716C658.009 277.874 657.567 277.032 656.682 276.19C655.796 277.032 655.356 277.874 655.019 278.716C654.939 278.926 654.873 279.138 654.816 279.35C654.605 279.408 654.397 279.476 654.19 279.556C653.359 279.897 652.527 280.343 651.697 281.241C652.527 282.139 653.359 282.585 654.19 282.926C654.396 283.005 654.603 283.074 654.81 283.131C654.867 283.343 654.934 283.555 655.014 283.766C655.349 284.608 655.791 285.45 656.682 286.292C657.574 285.45 658.015 284.608 658.35 283.766C658.429 283.557 658.495 283.347 658.553 283.136C658.761 283.079 658.968 283.011 659.175 282.931C660.006 282.592 660.836 282.144 661.667 281.241C660.836 280.338 660.006 279.89 659.175 279.551Z"
+                                        fill="#ADE0EC" />
+                                </g>
+                                <g id="star5">
+                                    <path id="path418"
+                                        d="M412.477 191.341C412.268 191.26 412.059 191.192 411.85 191.133C411.793 190.924 411.727 190.715 411.647 190.506C411.311 189.664 410.871 188.822 409.985 187.98C409.099 188.822 408.659 189.664 408.323 190.506C408.243 190.718 408.176 190.928 408.118 191.14C407.909 191.197 407.7 191.266 407.492 191.346C406.662 191.687 405.831 192.133 405 193.031C405.831 193.929 406.662 194.375 407.492 194.715C407.699 194.795 407.905 194.864 408.113 194.921C408.17 195.133 408.237 195.345 408.317 195.556C408.652 196.398 409.094 197.24 409.985 198.082C410.876 197.24 411.318 196.398 411.653 195.556C411.732 195.346 411.799 195.137 411.856 194.926C412.063 194.869 412.271 194.801 412.477 194.721C413.308 194.382 414.139 193.934 414.97 193.031C414.139 192.128 413.308 191.681 412.477 191.341Z"
+                                        fill="#D0F6FF" />
+                                </g>
+                                <g id="star2">
+                                    <path id="path422"
+                                        d="M318.495 91.4014C318.129 91.2602 317.762 91.1403 317.396 91.0391C317.295 90.6715 317.178 90.3039 317.04 89.9363C316.45 88.4605 315.678 86.9847 314.124 85.5075C312.57 86.9847 311.797 88.4605 311.208 89.9363C311.069 90.3079 310.95 90.6782 310.85 91.0484C310.483 91.151 310.117 91.2709 309.752 91.4121C308.295 92.0088 306.837 92.792 305.381 94.3663C306.837 95.9407 308.295 96.7239 309.752 97.3206C310.115 97.4604 310.476 97.5803 310.839 97.6815C310.939 98.0531 311.059 98.4234 311.198 98.795C311.786 100.272 312.56 101.749 314.124 103.225C315.687 101.749 316.463 100.272 317.049 98.795C317.187 98.4274 317.306 98.0598 317.406 97.6922C317.77 97.5896 318.132 97.4711 318.495 97.3312C319.953 96.7358 321.41 95.95 322.868 94.3663C321.41 92.7826 319.953 91.9968 318.495 91.4014Z"
+                                        fill="#ADE0EC" />
+                                </g>
+                                <g id="star3">
+                                    <path id="path430"
+                                        d="M567.016 163.164C566.649 163.023 566.282 162.903 565.915 162.8C565.815 162.434 565.697 162.066 565.559 161.699C564.97 160.223 564.197 158.746 562.643 157.27C561.089 158.746 560.316 160.223 559.728 161.699C559.59 162.069 559.47 162.441 559.369 162.81C559.003 162.912 558.638 163.033 558.272 163.175C556.814 163.771 555.358 164.553 553.9 166.129C555.358 167.703 556.814 168.486 558.272 169.082C558.634 169.222 558.997 169.343 559.359 169.444C559.459 169.816 559.579 170.186 559.717 170.558C560.306 172.035 561.08 173.51 562.643 174.986C564.206 173.51 564.982 172.035 565.57 170.558C565.708 170.19 565.826 169.822 565.926 169.453C566.289 169.352 566.653 169.234 567.016 169.094C568.472 168.498 569.93 167.713 571.387 166.129C569.93 164.545 568.472 163.759 567.016 163.164Z"
+                                        fill="#D0F6FF" />
+                                </g>
+                                <g id="star6">
+                                    <path id="path434"
+                                        d="M785.486 113.408C785.119 113.267 784.752 113.147 784.385 113.045C784.285 112.678 784.167 112.31 784.03 111.943C783.44 110.467 782.667 108.99 781.113 107.514C779.559 108.99 778.786 110.467 778.198 111.943C778.059 112.314 777.94 112.685 777.839 113.055C777.473 113.157 777.108 113.277 776.742 113.418C775.284 114.015 773.828 114.798 772.37 116.373C773.828 117.947 775.284 118.73 776.742 119.327C777.104 119.467 777.467 119.587 777.829 119.688C777.929 120.06 778.049 120.43 778.187 120.801C778.776 122.279 779.55 123.756 781.113 125.231C782.676 123.756 783.452 122.279 784.04 120.801C784.178 120.434 784.296 120.066 784.396 119.697C784.759 119.596 785.123 119.477 785.486 119.338C786.942 118.742 788.4 117.956 789.857 116.373C788.4 114.789 786.942 114.003 785.486 113.408Z"
+                                        fill="#D0F6FF" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                Copyright © 2023. All rights reserved.
+
+                <p>
+                    Designed & Developed by <a href="#rightContent">Achint Tyagi</a>
+
+                </p>
+            </div>
+        </div>
+
+        <div class="cursor"></div>
+        <div id="progress-bar">
+            <div id="progress-bar2"><i class=" fa-solid fa-person-arrow-up-from-line fa-bounce"></i></div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Lord ICON  -->
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <!-- EMAIL SEND  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("C4PS8ZSyn7ne8rDv6");
+        })();
+    </script>
+    <!-- SCRIPT  -->
+    <script src="Assests/script.js"></script>
+
+</body>
+
+</html>
