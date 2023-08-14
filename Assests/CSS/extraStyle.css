@@ -51,7 +51,6 @@ a,
 li {
   text-decoration: none !important;
   list-style: none !important;
-  cursor: none !important;
 }
 
 .headings {
@@ -86,10 +85,6 @@ li {
 }
 
 @media only screen and (min-width: 768px) {
-  body {
-    cursor: none !important;
-  }
-
   /* Candle */
   #candleDiv.candleDivDisplay {
     display: inherit;
@@ -387,66 +382,47 @@ li {
 }
 
 @keyframes animateBox {
-  0% {
-    border: 1px solid #79e0ee;
+  0%,
+  100% {
     top: 8%;
     left: 15%;
   }
 
   25% {
-    border: 1px solid rgba(255, 166, 0, 0.6);
     top: 8%;
     left: 20%;
   }
 
   50% {
-    border: 1px solid rgba(255, 255, 255, 0.6);
     top: 13%;
     left: 20%;
   }
 
   75% {
-    border: 1px solid #853eff;
     top: 13%;
-    left: 15%;
-  }
-
-  100% {
-    border: 1px solid #79e0ee;
-    top: 8%;
     left: 15%;
   }
 }
 
 @keyframes animateBox2 {
-  0% {
-    border: 1px solid #79e0ee;
+  0%,
+  100% {
     top: 13%;
     left: 20%;
   }
 
   25% {
-    border: 1px solid rgba(255, 166, 0, 0.6);
-
     top: 13%;
     left: 15%;
   }
 
   50% {
-    border: 1px solid rgba(255, 255, 255, 0.6);
     top: 8%;
     left: 15%;
   }
 
   75% {
-    border: 1px solid #853eff;
     top: 8%;
-    left: 20%;
-  }
-
-  100% {
-    border: 1px solid #79e0ee;
-    top: 13%;
     left: 20%;
   }
 }
