@@ -132,8 +132,7 @@
                             class="fa-brands fa-square-twitter"></i></a>
                     <a href="https://github.com/tyagi-achint" target="_blank"> <i
                             class="fa-brands fa-square-github"></i></a>
-                    <a href="https://in.pinterest.com/achinttyagi/" target="_blank"><i
-                            class="fa-brands fa-square-pinterest"></i></a>
+
                 </div>
                 <div class="credit">Designed By Achint Tyagi</div>
 
@@ -184,8 +183,7 @@
                                     src="Assests/Images/002-twitter.png"></a>
                             <a href="https://github.com/tyagi-achint" target="_blank"> <img
                                     src="Assests/Images/003-github.png"></a>
-                            <a href="https://in.pinterest.com/achinttyagi/" target="_blank"><img
-                                    src="Assests/Images/004-pinterest.png"></a>
+
                         </div>
                     </div>
 
@@ -195,7 +193,7 @@
                         <p class="headings">About Me</p>
                         <hr class="textUnderline">
                         <div class="aboutData">
-                            <h2>A passionate frontend developer 👨‍💻 from India <img
+                            <h2>A passionate frontend developer 👨‍💻 from भारत (India) <img
                                     src="Assests/Images/004-india.png">
                             </h2>
                             <ul>
@@ -921,7 +919,7 @@
                 </div>
             </div>
             <div class="footer">
-                Copyright © 2023. All rights reserved.
+                Copyright © <span id="currentYear"></span>.
 
                 <p>
                     Designed & Developed by <a href="#rightContent">Achint Tyagi</a>
@@ -951,6 +949,13 @@
     </script>
     <!-- SCRIPT  -->
     <script src="Assests/script.js"></script>
+
+    <!-- Current year -->
+    <script>
+        var currentYear = new Date().getFullYear();
+        document.getElementById("currentYear").textContent = currentYear;
+    </script>
+    </script>
 
 </body>
 
