@@ -238,6 +238,7 @@
 .card .card-title {
   font-size: 2vw;
   margin: 0 0 0 20px;
+  width: 80%;
 }
 
 .card .card-content {
@@ -280,7 +281,7 @@
 }
 
 #projects .card {
-  height: 26vw;
+  height: 28.5vw;
   position: relative;
 }
 
@@ -310,7 +311,7 @@
 }
 #projects .card .discripition p {
   text-align: center;
-  font-size: 3vh;
+  font-size: 4.5vh;
   margin: 3%;
 }
 

@@ -32,7 +32,38 @@
     <link rel="stylesheet" href="Assests/CSS/topContent.css">
     <link rel="stylesheet" href="Assests/CSS/extraStyle.css">
 
+    <style>
+        #pageNav {
+            position: fixed;
+            padding-top: 2vh;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            z-index: 8;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
 
+
+        .navUl {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .navUl li {
+            display: inline-block;
+            margin-right: 5vw;
+            font-family: "Bagel Fat One", cursive;
+            font-size: x-large;
+            letter-spacing: 2px;
+
+        }
+
+        #pageNav li a {
+            color: #fff;
+        }
+    </style>
 </head>
 
 
@@ -139,7 +170,21 @@
             </div>
         </div>
 
+
         <div id="topContainer">
+            <!-- Page Navbar -->
+            <div id="pageNav">
+                <ul class="navUl">
+                    <li><a href="#about" onclick="
+                    togglePanel()">About</a></li>
+                    <li><a href="#projects" onclick="
+                    togglePanel()">Projects</a></li>
+                    <li><a href="#resume" onclick="
+                    togglePanel()">Resume</a></li>
+                    <li><a href="#contact" onclick="
+                    togglePanel()">Contact</a></li>
+                </ul>
+            </div>
             <div id="leftContent">
                 <!-- Profile Section -->
                 <div class="profileContent">
