@@ -428,17 +428,35 @@ li {
 }
 
 @keyframes textAni {
-  0%,
-  25%,
-  100% {
+  0%, 20% {
     color: #79e0ee;
+    display: block;
   }
 
-  50%,
-  75% {
+  20.1%, 40% {
+    display: none;
+  }
+
+  40.1%, 60% {
     color: rgba(255, 255, 255, 0.6);
+    display: block;
+  }
+
+  60.1%, 80% {
+    display: none;
+  }
+
+  80.1%, 100% {
+    color: #79e0ee;
+    display: block;
   }
 }
+
+
+
+
+
+
 @keyframes factAni {
   0%,
   32%,

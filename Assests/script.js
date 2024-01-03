@@ -26,10 +26,13 @@ let navicon = document.querySelector(".fa-gear");
 let topContainer = document.querySelector("#topContainer");
 let bottomContainer = document.querySelector("#bottomContainer");
 let candleDiv = document.querySelector("#candleDiv");
+let pageNav = document.querySelector("#pageNav");
 function togglePanel() {
   panel.classList.toggle("open");
   navicon.classList.toggle("fa-spin");
   topContainer.classList.toggle("afterNavOpacity");
+  pageNav.classList.toggle("afterNavOpacity");
+
   bottomContainer.classList.toggle("afterNavOpacity");
   candleDiv.classList.toggle("candleDivDisplay");
 }

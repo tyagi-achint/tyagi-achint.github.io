@@ -14,7 +14,7 @@
 #leftContent .box,
 #leftContent .box2 {
   min-width: 65%;
-  min-height: 72%;
+  min-height: 67%;
   position: absolute;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -27,21 +27,34 @@
 
 #leftContent .box2 {
   border: 1px solid rgba(255, 255, 255, 0.6);
-
   animation-name: animateBox2;
 }
 
-#leftContent h1 {
+#leftContent .content {
   position: absolute;
   color: rgba(255, 255, 255, 0.6);
-  top: 88%;
-  right: 7%;
+  top: 82%;
+  right: 10%;
+  width: 70%;
   font-weight: 400;
   font-family: "Sacramento", cursive;
-
   font-size: xx-large;
+  text-align: center;
 
-  animation: textAni 5s infinite;
+}
+
+#leftContent .content span:first-child,#leftContent .content span:last-child{
+  animation: textAni 4s infinite;
+  font-weight: 900;
+  font-size:50px;
+}
+#leftContent .content span:first-child{
+  position: absolute;
+  left: 0;
+}
+#leftContent .content span:last-child{
+  position: absolute;
+  right: 0;
 }
 
 #leftContent .img {
@@ -50,7 +63,7 @@
   background-repeat: no-repeat;
   position: absolute;
   min-width: 58%;
-  min-height: 65%;
+  min-height: 60%;
   top: 14%;
   left: 21%;
 }
@@ -413,7 +426,7 @@
     z-index: 1;
   }
   #rightContent .content {
-    padding: 20vh 2vw 3vh 2vw;
+    padding: 10vh 2vw 3vh 2vw;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px 10px 0 0;
     border-bottom: none;
@@ -423,9 +436,10 @@
   #leftContent {
     flex: 0 0 45%;
     position: sticky !important;
-    top: 0 !important;
+    top: 0 ;
   }
   .onScrollContent {
+    top: 6% !important;
     flex: 0 0 33% !important;
   }
 }
@@ -441,4 +455,39 @@
   #topContainer {
     padding: 4%;
   }
+}
+
+/* Page Nav */
+
+#pageNav {
+  position: sticky;
+  padding: 2vh 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 8;
+  background: url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+  background-color: rgba(29, 29, 29, 0.7);
+
+}
+
+
+#pageNav .navUl {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#pageNav .navUl li {
+  display: inline-block;
+  margin-right: 5vw;
+  font-family: "Caprasimo", cursive;
+  font-size: x-large;
+  letter-spacing: 2px;
+
+}
+
+#pageNav li a {
+  color: #888;
 }
