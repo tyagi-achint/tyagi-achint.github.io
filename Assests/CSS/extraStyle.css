@@ -84,11 +84,16 @@ li {
   visibility: visible;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
   /* Candle */
   #candleDiv.candleDivDisplay {
     display: inherit;
   }
+  #pageNav{
+    display: inherit;
+
+  }
+  
 }
 
 /* Other Divs */
@@ -263,7 +268,7 @@ li {
   right: 20%;
   font-size: 2.5vw;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
   /* Navbar */
   #navbar .panel {
     left: -50%;
@@ -304,7 +309,7 @@ li {
     border: 5px solid #0a6ebd;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   /* Navbar */
   #navbar .panel {
     overflow-y: scroll;

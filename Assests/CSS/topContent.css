@@ -444,7 +444,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   #rightContent .skillSet .col {
     width: 40%;
   }
@@ -455,11 +455,15 @@
   #topContainer {
     padding: 4%;
   }
+  #rightContent{
+    padding: 0 2vw;
+  }
 }
 
 /* Page Nav */
 
 #pageNav {
+  display: none;
   position: sticky;
   padding: 2vh 0;
   top: 0;
