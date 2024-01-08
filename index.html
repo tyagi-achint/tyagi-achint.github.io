@@ -848,8 +848,14 @@
                                 <p>if you wish to send a new message</p>
 
 
-                                <button onClick="window.location.reload();"><a href="#contact"></a>Click Me</button>
+                                <button onClick="reloadAndNavigate()">Click Me</button>
                             </div>
+                            <script>
+                                function reloadAndNavigate() {
+                                    window.location.reload();
+                                    window.location.href = 'tyagi-achint.github.io#contact';
+                                }
+                            </script>
                             <!-- SVG  -->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 563" fill="none">
                                 <g id="envelope">
@@ -936,7 +942,7 @@
                 Copyright © <span id="currentYear"></span>.
 
                 <p>
-                    Designed & Developed by <a href="#">Achint Tyagi</a>
+                    Designed & Developed by <a href="tyagi-achint.github.io">Achint Tyagi</a>
 
                 </p>
             </div>
