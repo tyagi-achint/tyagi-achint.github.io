@@ -242,11 +242,12 @@ li {
 /* PROGRESS CIRCLE  */
 
 #progress-bar {
+  cursor: pointer;
   position: fixed;
   bottom: 3%;
   right: 1.5%;
-  width: 6vw;
-  height: 6vw;
+  width: 4vw;
+  height: 4vw;
   border-radius: 50%;
   opacity: 0.5;
   z-index: 3;
@@ -254,20 +255,32 @@ li {
   display: none;
 }
 #progress-bar2 {
-  margin: 7.5% auto;
+  margin: 12.5% auto;
   position: relative;
-  width: 5vw;
-  height: 5vw;
+  width: 3vw;
+  height: 3vw;
   border-radius: 50%;
   z-index: 10;
   background-color: #1d1d1d;
 }
 #progress-bar2 i {
   position: absolute;
-  bottom: 20%;
-  right: 20%;
-  font-size: 2.5vw;
+  right: 27%;
+  font-size: 1.7vw;
+  animation: bounceIcon 1s infinite;
 }
+
+@keyframes bounceIcon {
+  0%,100%{
+    bottom: 20%;
+  }
+  50%{
+    bottom: 30%;
+
+  }
+}
+
+
 @media only screen and (min-width: 1000px) {
   /* Navbar */
   #navbar .panel {

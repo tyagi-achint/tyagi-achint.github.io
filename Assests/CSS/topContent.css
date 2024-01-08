@@ -81,20 +81,10 @@
 }
 #rightContent .location {
   position: relative;
-  width: 46%;
   text-align: end;
 }
 
-#rightContent .location lord-icon {
-  width: 50px;
-  height: 50px;
-  text-align: start;
-  margin-top: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-}
+
 #rightContent .location span {
   font-size: medium;
   font-family: "Caprasimo", cursive;
