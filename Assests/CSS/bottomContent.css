@@ -318,8 +318,11 @@
 /* Footer  */
 .footer {
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 5vh;
   color: #838788;
+}
+.footer p{
+  margin-bottom: 1vh;
 }
 .footer a,
 #projects .headings a {
@@ -329,7 +332,7 @@
 
 @media only screen and (min-width: 1000px) {
   #bottomContainer {
-    padding: 0 2vw 10vh 2vw;
+    padding: 0 2vw 4vh 2vw;
   }
   #bottomContainer .content {
     padding: 10vh 2vw 3vh 2vw;
