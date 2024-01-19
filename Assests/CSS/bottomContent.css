@@ -197,6 +197,13 @@
 }
 
 /* Certificate and Projects  */
+#certificates .card a{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+
 
 .container {
   max-width: 80%;
@@ -212,7 +219,7 @@
   overflow-y: hidden;
 }
 .card .cardImg {
-  height: 20vw;
+  height: 15vw;
   border-radius: 12px 12px 0 0;
   background-position: center;
   background-size: 100% 100%;
@@ -221,7 +228,7 @@
   margin: 0 1%;
   display: flex;
   flex-direction: column;
-  flex: 0 0 48%;
+  flex: 0 0 35%;
   padding: 0 0 20px 0;
   font-family: "Architects Daughter", cursive;
 
@@ -254,14 +261,13 @@
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.39);
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
 }
 .card a:hover {
   background-color: #fff;
   color: black;
 }
+
+
 
 .cards::-webkit-scrollbar {
   height: 12px;
@@ -280,8 +286,17 @@
   background: #b5bfc1;
 }
 
+#projects .card .projectLinks{
+  position: absolute;
+  z-index: 3;
+  opacity: 1 !important;
+  width: fit-content;
+  bottom: 5%;
+  right: 5%;
+}
+
 #projects .card {
-  height: 28.5vw;
+  height: 24.5vw;
   position: relative;
 }
 
@@ -300,10 +315,7 @@
   z-index: 2;
   opacity: 1;
 }
-#projects .card a {
-  z-index: 3;
-  opacity: 1 !important;
-}
+
 
 #projects .card .discripition {
   z-index: 1;
@@ -311,7 +323,7 @@
 }
 #projects .card .discripition p {
   text-align: center;
-  font-size: large;
+  font-size: medium;
   margin: 3%;
 }
 
