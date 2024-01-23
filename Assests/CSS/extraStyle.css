@@ -447,7 +447,7 @@ li {
 
 @keyframes textAni {
   0%, 20% {
-    color: #79e0ee;
+    color: #5d3891;
     display: block;
   }
 
@@ -465,7 +465,7 @@ li {
   }
 
   80.1%, 100% {
-    color: #79e0ee;
+    color: #5d3891;
     display: block;
   }
 }

@@ -234,6 +234,30 @@ function switchColor(event) {
     #rightContent .skills .item:hover {
       box-shadow: 0px 0px 7px ${colorName};
     }
+    @keyframes textAni {
+      0%, 20% {
+        color: ${colorName};
+        display: block;
+      }
+    
+      20.1%, 40% {
+        display: none;
+      }
+    
+      40.1%, 60% {
+        color: rgba(255, 255, 255, 0.6);
+        display: block;
+      }
+    
+      60.1%, 80% {
+        display: none;
+      }
+    
+      80.1%, 100% {
+        color: ${colorName};
+        display: block;
+      }
+    }
   `;
 
   document.head.appendChild(styleTag);

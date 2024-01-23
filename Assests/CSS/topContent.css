@@ -4,7 +4,7 @@
 }
 /* LEFT CONTENT  */
 #leftContent {
-  height: 100vh;
+  height: 99vh;
   overflow: hidden;
   transition: all 1s ease-in-out;
 }
@@ -34,10 +34,10 @@
   position: absolute;
   color: rgba(255, 255, 255, 0.6);
   top: 82%;
-  right: 10%;
-  width: 70%;
+  right: 4%;
+  width: 80%;
   font-weight: 400;
-  font-family: "Sacramento", cursive;
+  font-family: 'Satisfy', cursive;
   font-size: xx-large;
   text-align: center;
 
@@ -486,3 +486,5 @@
 #pageNav li a {
   color: #888;
 }
+
+
