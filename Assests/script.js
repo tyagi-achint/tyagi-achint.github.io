@@ -258,6 +258,10 @@ function switchColor(event) {
         display: block;
       }
     }
+    #rightContent .social img {
+      background-color: ${colorName};}
+      #navbar li a:hover ,#navbar a  {
+        color: ${colorName};}
   `;
 
   document.head.appendChild(styleTag);
