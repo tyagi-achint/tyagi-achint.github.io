@@ -260,8 +260,14 @@ function switchColor(event) {
     }
     #rightContent .social img {
       background-color: ${colorName};}
+
       #navbar li a:hover ,#navbar a  {
         color: ${colorName};}
+
+        #rightContent .social img:hover {
+          box-shadow: 0px 0px 10px ${colorName};
+     
+        }
   `;
 
   document.head.appendChild(styleTag);
