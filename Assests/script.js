@@ -265,7 +265,7 @@ function switchColor(event) {
         color: ${colorName};}
 
         #rightContent .social img:hover {
-          box-shadow: 0px 0px 10px ${colorName};
+          box-shadow: 0px 0px 10px ${colorName} !important;
      
         }
   `;
