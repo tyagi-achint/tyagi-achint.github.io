@@ -208,6 +208,9 @@ function switchColor(event) {
     (color) => color.element === clickedElement
   ).name;
 
+
+
+
   const styleTag = document.createElement("style");
   styleTag.innerHTML = `
     body::before,
@@ -222,14 +225,15 @@ function switchColor(event) {
       color: ${colorName};
   text-shadow: 0px 3px 10px ${colorName};
     }
+
     .cards::-webkit-scrollbar-thumb {
-      background: ${colorName};
+      background: ${colorName} !important ;
     }
     .card{
-  box-shadow: 0px 0px 15px -2px ${colorName};
+  box-shadow: 0px 0px 6px 0px ${colorName};
     }
     .card:hover {
-      box-shadow: 0px 0px 15px 1px ${colorName};
+      box-shadow: 0px 0px 10px 1px ${colorName};
     }
     #rightContent .skills .item:hover {
       box-shadow: 0px 0px 7px ${colorName};

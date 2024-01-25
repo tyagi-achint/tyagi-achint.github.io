@@ -233,13 +233,13 @@
   font-family: "Architects Daughter", cursive;
 
   border-radius: 12px;
-  box-shadow: 0px 0px 15px -2px #5d3891;
+  box-shadow: 0px 0px 6px 0px #5d3891;
   transition: all 0.2s;
   position: relative;
 }
 
 .card:hover {
-  box-shadow: 0px 0px 15px 1px #5d3891;
+  box-shadow: 0px 0px 10px 1px #5d3891;
 }
 
 .card .card-title {
