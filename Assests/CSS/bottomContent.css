@@ -1,8 +1,11 @@
 /* CONTACT */
-#contact,
+
 #certificates,
 #projects {
   margin-bottom: 5%;
+}
+#contact {
+  margin-bottom: 2px;
 }
 #contact .contactp1 {
   text-align: left;
@@ -197,13 +200,11 @@
 }
 
 /* Certificate and Projects  */
-#certificates .card a{
+#certificates .card a {
   position: absolute;
-  bottom: 5%;
-  right: 5%;
+  bottom: 2%;
+  right: 2%;
 }
-
-
 
 .container {
   max-width: 80%;
@@ -219,6 +220,7 @@
   overflow-y: hidden;
 }
 .card .cardImg {
+  opacity: 0.9;
   height: 15vw;
   border-radius: 12px 12px 0 0;
   background-position: center;
@@ -230,7 +232,6 @@
   flex-direction: column;
   flex: 0 0 35%;
   padding: 0 0 20px 0;
-  font-family: "Architects Daughter", cursive;
 
   border-radius: 12px;
   box-shadow: 0px 0px 6px 0px #5d3891;
@@ -243,15 +244,28 @@
 }
 
 .card .card-title {
-  font-size: 2vw;
-  margin: 0 0 0 20px;
-  width: 80%;
+  margin: 8px 0 5px 20px;
 }
 
 .card .card-content {
-  margin: 20px 0 0 20px;
-  font-size: 1.5vw;
+  margin-left: 20px;
+  font-size: medium;
+  font-weight: 600;
   color: #838788;
+}
+.card-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card-content li {
+  display: inline-block;
+  font-size: small;
+  margin-right: 2px;
+  padding: 2px 4px;
+  border: 1px solid #ccccccb2;
+  background-color: transparent;
+  border-radius: 3px;
 }
 
 .card a {
@@ -266,8 +280,6 @@
   background-color: #fff;
   color: black;
 }
-
-
 
 .cards::-webkit-scrollbar {
   height: 12px;
@@ -286,7 +298,7 @@
   background: #b5bfc1;
 }
 
-#projects .card .projectLinks{
+#projects .card .projectLinks {
   position: absolute;
   z-index: 3;
   opacity: 1 !important;
@@ -296,7 +308,7 @@
 }
 
 #projects .card {
-  height: 24.5vw;
+  height: 22vw;
   position: relative;
 }
 
@@ -310,12 +322,16 @@
   transition: opacity 0.5s ease-in-out;
   overflow: hidden;
 }
+#projects .card .discripition {
+  top: 5%;
+  width: 90%;
+  padding: 0 5%;
+}
 
 #projects .card .cardData {
   z-index: 2;
   opacity: 1;
 }
-
 
 #projects .card .discripition {
   z-index: 1;
@@ -333,7 +349,7 @@
   margin-top: 5vh;
   color: #838788;
 }
-.footer p{
+.footer p {
   margin-bottom: 1vh;
 }
 .footer a,
@@ -344,7 +360,7 @@
 
 @media only screen and (min-width: 1000px) {
   #bottomContainer {
-    padding: 0 2vw ;
+    padding: 0 2vw;
   }
   #bottomContainer .content {
     padding: 10vh 2vw 3vh 2vw;

@@ -1,7 +1,7 @@
 /* Body */
 
 body {
-  color: #f8f8f8;
+  color: #fdffee;
   background-color: #1d1d1d;
   font-family: "Poppins", sans-serif;
   font-family: "Sora", sans-serif;
@@ -89,11 +89,9 @@ li {
   #candleDiv.candleDivDisplay {
     display: inherit;
   }
-  #pageNav{
+  #pageNav {
     display: inherit;
-
   }
-  
 }
 
 /* Other Divs */
@@ -138,7 +136,7 @@ li {
 
 #navbar li {
   padding-bottom: 3vh;
-font-weight: 800;
+  font-weight: 800;
   padding-left: 45%;
   font-size: xx-large;
   letter-spacing: 2px;
@@ -271,15 +269,14 @@ font-weight: 800;
 }
 
 @keyframes bounceIcon {
-  0%,100%{
+  0%,
+  100% {
     bottom: 20%;
   }
-  50%{
+  50% {
     bottom: 30%;
-
   }
 }
-
 
 @media only screen and (min-width: 1000px) {
   /* Navbar */
@@ -446,34 +443,34 @@ font-weight: 800;
 }
 
 @keyframes textAni {
-  0%, 20% {
+  0%,
+  20% {
     color: #5d3891;
     display: block;
   }
 
-  20.1%, 40% {
+  20.1%,
+  40% {
     display: none;
   }
 
-  40.1%, 60% {
+  40.1%,
+  60% {
     color: rgba(255, 255, 255, 0.6);
     display: block;
   }
 
-  60.1%, 80% {
+  60.1%,
+  80% {
     display: none;
   }
 
-  80.1%, 100% {
+  80.1%,
+  100% {
     color: #5d3891;
     display: block;
   }
 }
-
-
-
-
-
 
 @keyframes factAni {
   0%,

@@ -37,22 +37,22 @@
   right: 4%;
   width: 80%;
   font-weight: 400;
-  font-family: 'Satisfy', cursive;
+  font-family: "Satisfy", cursive;
   font-size: xx-large;
   text-align: center;
-
 }
 
-#leftContent .content span:first-child,#leftContent .content span:last-child{
+#leftContent .content span:first-child,
+#leftContent .content span:last-child {
   animation: textAni 4s infinite;
   font-weight: 900;
-  font-size:50px;
+  font-size: 50px;
 }
-#leftContent .content span:first-child{
+#leftContent .content span:first-child {
   position: absolute;
   left: 0;
 }
-#leftContent .content span:last-child{
+#leftContent .content span:last-child {
   position: absolute;
   right: 0;
 }
@@ -83,7 +83,6 @@
   position: relative;
   text-align: end;
 }
-
 
 #rightContent .location span {
   font-size: medium;
@@ -176,7 +175,7 @@
   position: relative;
   box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2);
 }
-#rightContent .skills .item img{
+#rightContent .skills .item img {
   border-radius: 5px;
 }
 #rightContent .skills .item:hover {
@@ -212,6 +211,9 @@
 #about .aboutData {
   width: 80%;
   margin: auto;
+}
+#about .aboutData b {
+  letter-spacing: 0.5px;
 }
 #about h2 {
   margin-bottom: 5%;
@@ -353,6 +355,13 @@
 
 /* Education and Experience */
 
+#rightContent .item_top h4 {
+  width: fit-content;
+  position: absolute;
+  top: 10%;
+  right: 2%;
+}
+
 #rightContent .education,
 #rightContent .experience {
   margin-bottom: 10%;
@@ -361,36 +370,34 @@
 .experience .expItem {
   background-color: #181715;
   position: relative;
-  padding:18px 40px 10px;
+  padding: 12px 40px 10px;
   border: 1px solid #151412;
   margin: 3%;
 }
 
 .education .item_top,
 .experience .item_top {
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 }
 
 .education .item_top h5 {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  font-weight: 800;
-  font-size: 1.2vw;
   color: #ffffff;
   opacity: 0.7;
 }
 
 .item_top span {
-  font-size: 1.5vw;
+  font-size: medium;
+  font-weight: bold;
   color: #888;
   opacity: 0.7;
 }
 
 .education h3,
 .experience h3 {
-  font-size: 2vw;
-  margin-bottom: 17px;
+  font-size: larger;
 }
 .eduItem:after,
 .expItem:after {
@@ -426,7 +433,7 @@
   #leftContent {
     flex: 0 0 45%;
     position: sticky !important;
-    top: 0 ;
+    top: 0;
   }
   .onScrollContent {
     top: 6% !important;
@@ -445,7 +452,7 @@
   #topContainer {
     padding: 4%;
   }
-  #rightContent{
+  #rightContent {
     padding: 0 2vw;
   }
 }
@@ -460,12 +467,11 @@
   left: 0;
   width: 100vw;
   z-index: 8;
-  border-bottom:1px solid rgb(128, 128, 128,.5);
-  background: url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+  border-bottom: 1px solid rgb(128, 128, 128, 0.5);
+  background: url("http://assets.iceable.com/img/noise-transparent.png") repeat
+    0 0;
   background-color: rgba(29, 29, 29, 0.7);
-
 }
-
 
 #pageNav .navUl {
   list-style: none;
@@ -477,14 +483,11 @@
 #pageNav .navUl li {
   display: inline-block;
   margin-right: 4vw;
-  font-family: 'Russo One';
+  font-family: "Russo One";
   font-size: x-large;
   letter-spacing: 2px;
-
 }
 
 #pageNav li a {
   color: #888;
 }
-
-
