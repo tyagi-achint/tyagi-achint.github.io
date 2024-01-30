@@ -455,6 +455,10 @@
   #rightContent {
     padding: 0 2vw;
   }
+  #rightContent .item_top h4 {
+    width: fit-content;
+    position: inherit;
+  }
 }
 
 /* Page Nav */
