@@ -272,6 +272,10 @@ function switchColor(event) {
           box-shadow: 0px 0px 10px ${colorName} !important;
      
         }
+        #switchColor .colorActive {
+          color: ${colorName};
+          border: 5px dashed ${colorName};
+        }
   `;
 
   document.head.appendChild(styleTag);

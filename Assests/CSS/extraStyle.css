@@ -191,12 +191,16 @@ li {
 }
 
 #switchColor li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin-bottom: 3vh;
-  border-radius: 100%;
+  border-radius: 50%;
   width: 3vw;
   height: 3vw;
   padding: 0 !important;
+  color: black;
 }
 
 #switchColor li:nth-child(1) {
@@ -212,7 +216,9 @@ li {
 }
 
 #switchColor .colorActive {
-  border: 3px solid white;
+  background: transparent !important;
+  color: #5d3891;
+  border: 5px dashed #5d3891;
 }
 
 #switchColor .colorPanel {
@@ -224,10 +230,10 @@ li {
 }
 
 #switchColor .open {
-  bottom: 15%;
+  bottom: 10%;
 }
 
-#switchColor i {
+#switchColor i.fa-caret-up {
   position: fixed;
   bottom: 2%;
   left: 2%;
@@ -235,6 +241,10 @@ li {
   font-size: xx-large;
   color: #888;
   transition: all 1.5s ease-in-out;
+}
+
+#switchColor li.fa-lightbulb {
+  font-size: 2vw;
 }
 
 /* PROGRESS CIRCLE  */
