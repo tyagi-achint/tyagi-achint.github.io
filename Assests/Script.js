@@ -270,5 +270,8 @@ var currentYear = new Date().getFullYear();
 document.getElementById("currentYear").textContent = currentYear;
 
 
+// Projects PopUp
 
-
+function openProjectsPopUp() {
+  console.log("openProjectsPopUp");
+}
