@@ -1,0 +1,56 @@
+nav {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+  backdrop-filter: blur(0.5rem);
+  border-bottom: 1px solid #cccccc14;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav i {
+  color: #f2f2f2;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  font-size: 2rem;
+  position: relative;
+}
+
+nav a {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #f2f2f2;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-size: large;
+  position: relative;
+}
+nav::-webkit-scrollbar {
+  display: none;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 15%;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 1s ease;
+}
+
+nav a:hover::before {
+  width: 70%;
+}
+
+nav .icon {
+  display: none;
+}

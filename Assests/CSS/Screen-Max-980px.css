@@ -1,0 +1,48 @@
+@media screen and (max-width: 980px) {
+  nav a {
+    display: none;
+  }
+
+  nav .icon {
+    float: right;
+    display: block;
+  }
+  nav.responsive {
+    position: sticky;
+    display: block;
+    backdrop-filter: blur(2rem);
+    height: 100vh;
+    overflow: auto;
+  }
+  nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #cccccc14;
+    width: 75%;
+  }
+
+  #TopSection {
+    display: block;
+    margin: auto;
+    padding: 2%;
+  }
+
+  #DataContainer {
+    margin-top: 0;
+  }
+  #Contact form {
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  #Certificates .card {
+    flex: 0 0 60%;
+  }
+}

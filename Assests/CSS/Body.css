@@ -1,0 +1,233 @@
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  color: #fdffee;
+  background-color: #1d1d1d;
+  font-weight: 400;
+  overflow-x: hidden !important;
+  font-family: sans-serif;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: #5d3891;
+  filter: blur(200px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+body:after {
+  content: "";
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: #5d3891;
+  filter: blur(200px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+#Background-Effect {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  z-index: -100;
+  background: transparent
+    url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+  background-repeat: repeat;
+  opacity: 0.5;
+  visibility: visible;
+}
+
+a,
+li {
+  text-decoration: none !important;
+  list-style: none !important;
+}
+
+.heading {
+  margin-bottom: 0.8rem !important;
+  text-transform: uppercase !important;
+  font-size: medium !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: #ccc !important;
+  letter-spacing: 1px !important;
+  font-weight: 600;
+}
+
+.textUnderline {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 3rem !important;
+  width: 90%;
+  margin: auto;
+}
+
+/* Cursor */
+
+#Cursor {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  pointer-events: none;
+  border: 3px solid #a1c2f1;
+  transition-duration: 200ms;
+  transition: ease-out;
+  animation: cursorAnimationFirst 0.5s infinite alternate;
+}
+
+#Cursor::after {
+  content: "";
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  border: 8px solid #5a96e3;
+  border-radius: 50%;
+  opacity: 0.5;
+  top: -8px;
+  left: -8px;
+  animation: cursorAnimationSecond 0.5s infinite alternate;
+}
+
+.curExpand {
+  animation: cursorAnimationThird 0.5s forwards;
+  border: 5px solid #0a6ebd;
+}
+
+/* Progress Bar/Back to Top */
+
+#ProgressBar {
+  cursor: pointer;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0.9;
+  z-index: 3;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#BackToTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 10;
+  background-color: #1d1d1d;
+}
+
+#BackToTop i {
+  font-size: large;
+  animation: BounceBackToTopIcon 1s infinite;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  margin: 0 auto 1.5rem;
+  color: #838788;
+}
+footer p {
+  margin: 0;
+}
+footer a {
+  color: #ddd !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Switch Color */
+
+#SwitchColor {
+  cursor: pointer;
+}
+
+#SwitchColor ul {
+  text-align: center;
+  height: 50%;
+  padding: 0 !important;
+  width: auto;
+}
+
+#SwitchColor li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0 !important;
+  color: black;
+}
+
+#SwitchColor li:nth-child(1) {
+  background: #5d3891;
+}
+
+#SwitchColor li:nth-child(2) {
+  background: #55a3e6;
+}
+
+#SwitchColor li:nth-child(3) {
+  background: #55e6a5;
+}
+
+#SwitchColor .colorActive {
+  background: transparent !important;
+  color: #5d3891;
+  border: 5px dashed #5d3891;
+}
+
+#SwitchColor .colorPanel {
+  position: fixed;
+  left: 1%;
+  backdrop-filter: blur(0.3rem);
+  border-radius: 15px;
+  padding: 2px 5px;
+  bottom: -50%;
+  z-index: 5;
+  transition: all 1.4s linear;
+}
+
+#SwitchColor .open {
+  bottom: 10%;
+}
+
+#SwitchColor i.fa-caret-up {
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+  z-index: 9;
+  font-size: xx-large;
+  color: #888;
+  transition: all 1.5s ease-in-out;
+}
+
+#SwitchColor li.fa-lightbulb {
+  font-size: x-large;
+}
