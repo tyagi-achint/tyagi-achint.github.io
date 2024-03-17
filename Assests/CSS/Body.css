@@ -46,7 +46,7 @@ body:after {
   height: 200vh;
   z-index: -100;
   background: transparent
-    url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+    url("https://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
   background-repeat: repeat;
   opacity: 0.5;
   visibility: visible;

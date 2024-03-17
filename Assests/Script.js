@@ -272,6 +272,12 @@ document.getElementById("currentYear").textContent = currentYear;
 
 // Projects PopUp
 
+let ProjectsPopUp = document.getElementById("ProjectsPopUp");
+
 function openProjectsPopUp() {
-  console.log("openProjectsPopUp");
-}
+  ProjectsPopUp.setAttribute("style", "display:block !important;");
+};
+
+function closeProjectsPopUp() {
+  ProjectsPopUp.setAttribute("style", "display:none !important;");
+};

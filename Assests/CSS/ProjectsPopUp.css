@@ -1,0 +1,40 @@
+#ProjectsPopUp {
+  position: fixed;
+  max-width: 1440px;
+  backdrop-filter: blur(0.5rem);
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 5rem;
+  margin: auto;
+  display: none;
+}
+#ProjectsPopUp .content {
+  position: relative;
+  border-radius: 15px;
+  background-color: #00000030;
+  padding: 10px;
+}
+
+#ProjectsPopUp .fa-circle-xmark {
+  top: 0;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  font-size: xx-large;
+}
+
+#ProjectsPopUp h1 {
+  font-family: monospace;
+  color: gray;
+  margin-top: 0;
+  font-weight: 100;
+  margin-bottom: 2rem !important;
+}
+
+#ProjectsPopUp h1 a {
+  text-decoration: underline !important;
+  color: aliceblue;
+}

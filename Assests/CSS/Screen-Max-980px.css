@@ -45,4 +45,9 @@
   #Certificates .card {
     flex: 0 0 60%;
   }
+
+  #Projects .card {
+    margin-bottom: 40px !important;
+    flex: 0 0 55%;
+  }
 }
