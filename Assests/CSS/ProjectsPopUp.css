@@ -10,12 +10,23 @@
   padding: 5rem;
   margin: auto;
   display: none;
+  overflow: auto;
 }
+
+#ProjectsPopUp::-webkit-scrollbar {
+  display: none;
+}
+#ProjectsPopUp {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 #ProjectsPopUp .content {
   position: relative;
   border-radius: 15px;
   background-color: #00000030;
   padding: 10px;
+  overflow: hidden;
 }
 
 #ProjectsPopUp .fa-circle-xmark {
@@ -37,4 +48,79 @@
 #ProjectsPopUp h1 a {
   text-decoration: underline !important;
   color: aliceblue;
+}
+
+#ProjectsPopUp .card {
+  width: 70%;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  padding: 10px;
+  margin-bottom: 20px !important;
+  background-color: #cccccc50;
+}
+
+#ProjectsPopUp .cardData {
+  padding: 20px;
+}
+
+#ProjectsPopUp .card img {
+  height: 200px;
+  background-size: cover;
+}
+
+#ProjectsPopUp .cardData h3 {
+  font-size: 1.5rem;
+  margin: 10px auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
+}
+
+#ProjectsPopUp .cardData ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#ProjectsPopUp .cardData li {
+  display: inline-block;
+  font-size: small;
+  margin: 2px;
+  padding: 3px 5px;
+  border: 1px solid #ccccccb2;
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+#ProjectsPopUp .cardData .projectLinks {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#ProjectsPopUp .card a {
+  color: #fff;
+  font-size: medium;
+  margin: auto 5px;
+  padding: 3px 5px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.39);
+}
+
+#ProjectsPopUp .card a:hover {
+  background-color: #fff;
+  color: black;
+}
+#ProjectsPopUp .viewProjectButton {
+  width: fit-content;
+  font-family: monospace;
+  color: gray;
+  font-weight: 100;
+  margin-top: 2rem;
+  margin-left: auto;
+  cursor: pointer;
+}
+#ProjectsPopUp .viewProjectButton:hover {
+  text-decoration: underline;
 }
