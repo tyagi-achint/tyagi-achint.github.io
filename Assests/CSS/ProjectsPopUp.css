@@ -24,7 +24,7 @@
 #ProjectsPopUp .content {
   position: relative;
   border-radius: 15px;
-  background-color: #00000030;
+  background-color: #000000cc;
   padding: 10px;
   overflow: hidden;
 }
@@ -39,9 +39,8 @@
 
 #ProjectsPopUp h1 {
   font-family: monospace;
-  color: gray;
+  color: #fff;
   margin-top: 0;
-  font-weight: 100;
   margin-bottom: 2rem !important;
 }
 
@@ -68,6 +67,7 @@
 #ProjectsPopUp .card img {
   height: 200px;
   background-size: cover;
+  margin: auto;
 }
 
 #ProjectsPopUp .cardData h3 {
