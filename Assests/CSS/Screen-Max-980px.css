@@ -53,10 +53,10 @@
     flex: 0 0 55%;
   }
   #ProjectsPopUp {
-    padding: 3rem !important;
+    padding: 1rem !important;
   }
   #ProjectsPopUp .card {
-    width: 90% !important;
+    width: 80% !important;
   }
 }
 
@@ -71,7 +71,7 @@
     text-align: center;
   }
   #ProjectsPopUp .card {
-    width: 70% !important;
+    width: 90% !important;
     display: block !important;
     text-align: center;
   }
