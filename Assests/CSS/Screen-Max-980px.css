@@ -11,6 +11,8 @@
     position: sticky;
     display: block;
     backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: blur(2rem);
+
     height: 100vh;
     overflow: auto;
   }

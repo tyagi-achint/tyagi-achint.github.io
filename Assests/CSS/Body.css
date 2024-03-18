@@ -220,6 +220,7 @@ footer a {
   position: fixed;
   left: 1%;
   backdrop-filter: blur(0.3rem);
+  -webkit-backdrop-filter: blur(0.3rem);
   border-radius: 15px;
   padding: 2px 5px;
   bottom: -50%;

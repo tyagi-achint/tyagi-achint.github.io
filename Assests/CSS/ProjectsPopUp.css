@@ -2,6 +2,7 @@
   position: fixed;
   max-width: 1440px;
   backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
   z-index: 100;
   top: 0;
   bottom: 0;
