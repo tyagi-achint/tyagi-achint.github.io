@@ -22,19 +22,22 @@
 }
 
 #ProjectsPopUp .content {
-  position: relative;
   border-radius: 15px;
   background-color: #000000cc;
   padding: 10px;
   overflow: hidden;
 }
 
-#ProjectsPopUp .fa-circle-xmark {
+.close-icon {
   top: 0;
-  right: 0;
-  position: absolute;
+  position: sticky;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+#ProjectsPopUp .fa-circle-xmark {
   cursor: pointer;
-  font-size: xx-large;
+  font-size: xxx-large;
 }
 
 #ProjectsPopUp h1 {
@@ -45,7 +48,6 @@
 }
 
 #ProjectsPopUp h1 a {
-  text-decoration: underline !important;
   color: aliceblue;
 }
 

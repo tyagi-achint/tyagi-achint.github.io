@@ -50,4 +50,27 @@
     margin-bottom: 40px !important;
     flex: 0 0 55%;
   }
+  #ProjectsPopUp {
+    padding: 3rem !important;
+  }
+  #ProjectsPopUp .card {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #Skills .skill {
+    width: 22%;
+  }
+
+  #Projects .card {
+    flex: 0 0 70%;
+    display: block;
+    text-align: center;
+  }
+  #ProjectsPopUp .card {
+    width: 70% !important;
+    display: block !important;
+    text-align: center;
+  }
 }

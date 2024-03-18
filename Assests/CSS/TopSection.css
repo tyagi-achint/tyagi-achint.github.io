@@ -356,6 +356,7 @@
 #Skills .skill-Set {
   width: 90%;
   display: flex;
+  margin: auto;
   flex-wrap: wrap;
   text-align: center;
   padding: 2% 0;
