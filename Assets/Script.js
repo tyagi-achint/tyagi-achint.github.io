@@ -25,9 +25,10 @@ function scrollFun() {
 
 const changingText = document.querySelector("#ImageContainer .designationText");
 const newTexts = [
-  "Front-end Developer",
-  "Web Developer",
+  "Front-end Engineer",
+  "Flutter Developer",
   "Continuous Learner",
+  "Web Developer"
 ];
 
 let currentIndex = 0;
