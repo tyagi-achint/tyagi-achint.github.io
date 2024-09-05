@@ -369,9 +369,9 @@
 
 #Skills .skill {
   margin-bottom: 20px;
-
+  margin-right: 15px;
   padding: 10px;
-  width: 18%;
+  width: 15%;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   position: relative;
@@ -383,7 +383,7 @@
   height: 40px;
 }
 #Skills .skill h5 {
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 #Skills .skill:hover {
