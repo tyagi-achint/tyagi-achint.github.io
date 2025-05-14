@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# System files
+Thumbs.db
+desktop.ini
