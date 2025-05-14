@@ -257,3 +257,16 @@ document.addEventListener("contextmenu", function (e) {
 document.addEventListener("contextmenu", function (e) {
   e.preventDefault();
 });
+
+// Loading
+
+document.addEventListener("DOMContentLoaded", () => {
+  const loadingScreen = document.getElementById("loading-screen");
+
+  setTimeout(() => {
+    loadingScreen.classList.add("fade-out");
+    setTimeout(() => {
+      loadingScreen.style.display = "none";
+    }, 800);
+  }, 500);
+});
