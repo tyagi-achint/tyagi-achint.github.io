@@ -106,3 +106,10 @@
     }
   }
 }
+@media (max-width: 500px) {
+  #footer {
+    div:nth-child(1) {
+      display: none;
+    }
+  }
+}
