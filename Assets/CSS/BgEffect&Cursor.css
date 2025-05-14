@@ -1,0 +1,175 @@
+#Background-Effect {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  z-index: -100;
+  background: transparent
+    url("https://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+  background-repeat: repeat;
+  opacity: 0.5;
+  visibility: visible;
+}
+#Background-Effect .star {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  animation: twinkleStar 4s infinite ease-in-out;
+  opacity: 0;
+  top: 20%;
+  left: 250;
+}
+
+#Background-Effect .star::before,
+#Background-Effect .star::after {
+  content: "";
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+
+#Background-Effect .star::before {
+  width: 2px;
+  height: 6px;
+  top: 0;
+  left: 2px;
+}
+
+#Background-Effect .star::after {
+  width: 6px;
+  height: 2px;
+  top: 2px;
+  left: 0;
+}
+
+@keyframes twinkleStar {
+  0% {
+    opacity: 0;
+    transform: translate3d(calc(100vw * var(--x)), calc(100vh * var(--y)), 0)
+      scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: translate3d(calc(100vw * var(--x)), calc(100vh * var(--y)), 0)
+      scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(calc(100vw * var(--x2)), calc(100vh * var(--y2)), 0)
+      scale(0.5);
+  }
+}
+
+#Background-Effect .shooting-star {
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  background: white;
+  box-shadow: 0 0 6px white;
+  opacity: 0;
+  transform: rotate(45deg);
+  animation: shoot 5s ease-in-out infinite;
+}
+
+@keyframes shoot {
+  0% {
+    top: -20%;
+    left: -20%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  100% {
+    top: 120%;
+    left: 120%;
+    opacity: 0;
+  }
+}
+
+#Background-Effect .bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: blue;
+  pointer-events: none;
+  animation-name: floatUp;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-120vh);
+  }
+}
+
+#Cursor {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  pointer-events: none;
+  border: 3px solid #a1c2f1;
+  transition-duration: 200ms;
+  transition: ease-out;
+  animation: cursorAnimationFirst 0.5s infinite alternate;
+}
+
+#Cursor::after {
+  content: "";
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  border: 8px solid #5a96e3;
+  border-radius: 50%;
+  opacity: 0.5;
+  top: -8px;
+  left: -8px;
+  animation: cursorAnimationSecond 0.5s infinite alternate;
+}
+
+.curExpand {
+  animation: cursorAnimationThird 0.5s forwards;
+  border: 5px solid #0a6ebd;
+}
+
+@keyframes cursorAnimationFirst {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes cursorAnimationSecond {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+
+@keyframes cursorAnimationThird {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}

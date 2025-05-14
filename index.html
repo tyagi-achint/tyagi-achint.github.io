@@ -1,0 +1,932 @@
+<html lang="en" data-theme="light">
+  <head>
+    <script>
+      fetch("./Assets/HTML/head.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.head.innerHTML += data;
+        });
+    </script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </head>
+
+  <body>
+    <div id="Background-Effect"></div>
+
+    <nav>
+      <img class="navBar-logo" src="./Assets/GIF/hinduism.webp" alt="Logo" />
+      <div class="menu-icon" onclick="navFunction(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#About">About Me</a>
+        <a href="#Certificates">Certificates</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Resume">Resume</a>
+        <a href="#Contact">Contact</a>
+      </div>
+    </nav>
+
+    <div id="portfolioBody">
+      <div id="TopSection" class="max-width">
+        <div id="ContentContainer">
+          <div class="dateLocation">
+            <p class="dayDate"></p>
+            <p class="location">
+              <lord-icon
+                src="https://cdn.lordicon.com/dhmavvpz.json"
+                trigger="loop"
+                delay="700"
+                stroke="bold"
+                style="width: 40px; height: 40px"
+              >
+              </lord-icon>
+
+              <span>Pune, Maharashtra</span>
+            </p>
+          </div>
+          <div class="contentBlock">
+            <div class="nameDiv">
+              <div>
+                <h4 class="greating">Hey <span class="wave"> 👋🏼 </span></h4>
+                <p class="name">You're looking at</p>
+              </div>
+              <div class="nameBlock">
+                <span class="nameText">Achint Tyagi</span>
+              </div>
+            </div>
+
+            <h2 class="objective">
+              Passionate Frontend Engineer with a strong foundation in clean,
+              responsive interfaces and thoughtful user experiences. I bridge
+              design and development to create intuitive web and mobile
+              solutions that enhance user engagement. With an eye for design and
+              a problem-solving mindset, I bring adaptability, creativity, and a
+              collaborative spirit to every project.
+            </h2>
+
+            <div id="About">
+              <h3 class="heading">About Me</h3>
+              <hr class="textUnderline" />
+              <div class="aboutData">
+                <h3>
+                  <span>
+                    A passionate young Frontend Engineer&nbsp;
+                    <img
+                      src="Assets/Images/developer.png"
+                      alt="developer icon"
+                    />&nbsp;from भारत (India)
+                  </span>
+                  <img src="Assets/GIF/indian_map.gif" alt="India map gif" />
+                </h3>
+                <ul>
+                  <li>
+                    <img src="Assets/GIF/speak.gif" alt="talking icon" />
+                    <span>
+                      I speak <b><i>&nbsp;English&nbsp;</i></b> and
+                      <b><i>&nbsp;Hindi</i></b
+                      >.
+                    </span>
+                  </li>
+                  <li>
+                    <img src="Assets/GIF/learning.gif" alt="reading icon" />
+                    <span>
+                      Currently learning <b><i>&nbsp;NextJS&nbsp;</i></b> and
+                      <b><i>&nbsp;NestJS</i></b
+                      >.
+                    </span>
+                  </li>
+                  <li>
+                    <img
+                      src="Assets/GIF/cooperation.gif"
+                      alt="collaboration icon"
+                    /><span>
+                      Open to collaboration in
+                      <b><i>&nbsp;Web Development</i></b
+                      >.
+                    </span>
+                  </li>
+                  <li>
+                    <img src="Assets/GIF/directions.gif" alt="help icon" />
+                    <span>
+                      Looking for guidance in
+                      <b><i>&nbsp;Back-end Development</i></b
+                      >.
+                    </span>
+                  </li>
+                  <li>
+                    <img src="Assets/GIF/q-and-a.gif" alt="ask icon" />
+                    <span>
+                      Ask me about
+                      <b><i>&nbsp;Frontend Development&nbsp;</i></b> and
+                      <b><i>&nbsp;UI/UX Design</i></b
+                      >.
+                    </span>
+                  </li>
+                  <li>
+                    <img src="Assets/GIF/idea.gif" alt="fun fact icon" />
+                    <div>
+                      Fun fact :
+                      <span class="funFact">I think</span>
+                      <span class="funFact">I am</span>
+                      <span class="funFact">creative with</span>
+                      <span class="funFact">colors!</span>
+                    </div>
+                  </li>
+                </ul>
+
+                <h5 class="sub-heading">What I can do</h5>
+                <p>
+                  As a modern front-end web developer, I specialize in building
+                  responsive, scalable websites and applications using tools
+                  like WordPress, Webflow, React, and Next.js. I also develop
+                  cross-platform mobile apps using Flutter and have experience
+                  with back-end technologies like NestJS and MySQL, allowing me
+                  to deliver full-stack solutions when needed.
+                </p>
+                <h5 class="sub-heading">What I’m Doing Currently</h5>
+                <p>
+                  I’m currently working as a Frontend Engineer, gaining hands-on
+                  experience and refining my coding practices through real-world
+                  projects. Alongside my role, I’m actively exploring freelance
+                  opportunities and continuously learning to stay up-to-date
+                  with the latest development frameworks and best practices.
+                </p>
+
+                <div class="hireMe">
+                  <img src="Assets/GIF/hiring.gif" width="37px" />
+                  <span>
+                    <h4>I’m available for a freelance job.</h4>
+                    <a href="#Contact" class="hireMeButton">Hire me </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div id="Experience">
+              <p class="heading">Experience</p>
+              <hr class="textUnderline" />
+              <div class="expContainer">
+                <div class="expItem">
+                  <div>
+                    <h3>Frontend Engineer</h3>
+                    <h4>Intelera Tech</h4>
+                  </div>
+                  <h4>JUL 2024 - Present</h4>
+                  <p>
+                    Currently contributing to various frontend projects using
+                    technologies such as Flutter, NestJS, Next.js, and React.
+                    Working closely with experienced mentors to continuously
+                    enhance my technical skills and deliver scalable,
+                    high-performance solutions.
+                  </p>
+                </div>
+
+                <div class="expItem">
+                  <div>
+                    <h3>Frontend Developer</h3>
+                    <h4>Confidential Client (Indonesia)</h4>
+                  </div>
+                  <h4>JAN 2025</h4>
+                  <p>
+                    Designed and developed a responsive website within one week
+                    for an Indonesian client to showcase their company's work.
+                    Delivered a clean, user-friendly layout tailored to the
+                    client's business goals, ensuring optimal performance across
+                    devices.
+                  </p>
+                </div>
+
+                <div class="expItem">
+                  <div>
+                    <h3>Webflow Developer</h3>
+                    <h4>Confidential Tech Company</h4>
+                  </div>
+                  <h4>DEC 2024 - MAY 2025</h4>
+                  <p>
+                    Collaborated with a UI designer to develop a fully
+                    responsive Webflow website for a leading tech company. The
+                    project included complex pages such as services, team
+                    profiles, careers, blogs, and case studies, contributing to
+                    an improved online presence.
+                  </p>
+                </div>
+
+                <div class="expItem">
+                  <div>
+                    <h3>WordPress Developer</h3>
+                    <h4>Startup Business</h4>
+                  </div>
+                  <h4>FEB 2025</h4>
+                  <p>
+                    Independently designed and developed a WordPress website for
+                    a startup to showcase their services, team, and blog
+                    content. Ensured a responsive and visually cohesive design
+                    to strengthen the company's digital identity.
+                  </p>
+                </div>
+
+                <div class="expItem">
+                  <div>
+                    <h3>Frontend Intern</h3>
+                    <h4>Varp Techlabs</h4>
+                  </div>
+                  <h4>JAN 2024 - JUN 2024</h4>
+                  <p>
+                    Developed responsive web pages using Webflow and enhanced
+                    React skills through work on dynamic web applications. This
+                    experience significantly improved both my technical
+                    capabilities and adaptability.
+                  </p>
+                </div>
+
+                <div class="expItem">
+                  <div>
+                    <h3>Web Developer Intern</h3>
+                    <h4>OctaNet</h4>
+                  </div>
+                  <h4>JUN 2023 - JUL 2023</h4>
+                  <p>
+                    Created a web application with digital note management
+                    features including creation, editing, and organization. Also
+                    conducted a website analysis and successfully cloned its
+                    structure and functionality.
+                  </p>
+                </div>
+
+                <div class="expItem">
+                  <div>
+                    <h3>WordPress Developer</h3>
+                    <h4>Dharohar</h4>
+                  </div>
+                  <h4>JUN 2021 - AUG 2021</h4>
+                  <p>
+                    Designed and built a fully functional WordPress E-com
+                    website. Delivered a responsive design and a brand-aligned
+                    logo that captured the organization’s identity effectively.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="Skills">
+              <p class="heading">Skills</p>
+              <hr class="textUnderline" />
+              <div class="skill-Set">
+                <div class="skill">
+                  <div class="skill-name">
+                    <img src="Assets/Images/Technologies/Next.js.svg" />
+                    <h5>NextJS</h5>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">
+                    <img src="Assets/Images/Technologies/Nest.js.svg" />
+                    <h5>NestJS</h5>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">
+                    <img src="Assets/Images/Technologies/Node.js.svg" />
+                    <h5>NodeJS</h5>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">
+                    <img src="Assets/Images/Technologies/React.svg" />
+                    <h5>ReactJS</h5>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">
+                    <img src="Assets/Images/Technologies/TypeScript.svg" />
+                    <h5>Typescript</h5>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">
+                    <img src="Assets/Images/Technologies/Flutter.svg" />
+                    <h5>Flutter</h5>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">
+                    <img src="Assets/Images/Technologies/Python.svg" />
+                    <h5>Python</h5>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">
+                    <img src="Assets/Images/Technologies/JavaScript.svg" />
+                    <h5>JavaScript</h5>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">
+                    <img src="Assets/Images/Technologies/PHP.svg" />
+                    <h5>PhP</h5>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">
+                    <img src="Assets/Images/Technologies/Flutter.svg" />
+                    <h5>HTML</h5>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">
+                    <img src="Assets/Images/Technologies/CSS3.svg" />
+                    <h5>CSS</h5>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">
+                    <img src="Assets/Images/Technologies/Bootstrap.svg" />
+                    <h5>Bootstrap</h5>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">
+                    <img src="Assets/Images/Technologies/Tailwind CSS.svg" />
+                    <h5>Tailwind</h5>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">
+                    <img src="Assets/Images/Technologies/Webflow.svg" />
+                    <h5>Webflow</h5>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">
+                    <img src="Assets/Images/Technologies/WordPress.svg" />
+                    <h5>WordPress</h5>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">
+                    <img src="Assets/Images/Technologies/Java.svg" />
+                    <h5>Java</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="Education">
+              <p class="heading">Education</p>
+              <hr class="textUnderline" />
+              <div class="eduItem">
+                <h3>
+                  Master of Computer Application <spam>(2022 - 2024)</spam>
+                </h3>
+                <h3>MIT World Peace University, Pune</h3>
+              </div>
+              <div class="eduItem">
+                <h3>
+                  Bachelor of Computer Application <spam>(2019 - 2022)</spam>
+                </h3>
+                <h3>Institute Of Technology & Science, Ghaziabad</h3>
+              </div>
+            </div>
+
+            <div id="Resume">
+              <p class="heading">Resume</p>
+              <hr class="textUnderline" />
+              <a href="Assets/Achint-Tyagi.pdf" target="_blank">
+                <div class="resumebox">
+                  <img src="Assets/GIF/registration.gif" width="37px" />
+                  <h4>View/Download Resume</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="ImageContainer">
+          <div
+            id="protected-img"
+            class="profileImage"
+            style="background-image: url('./Assets/Images/Achint.jpg')"
+          ></div>
+
+          <div id="designationDiv">
+            <span class="designationText">Front-End Engineer</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="bottomSection" class="max-width">
+        <div id="Projects">
+          <div class="headingDiv">
+            <p class="heading">Projects</p>
+            <h4 class="viewProjectButton" onclick="openProjectPopUp()">
+              View All
+            </h4>
+          </div>
+
+          <hr class="textUnderline" />
+          <div class="projectContainer">
+            <div class="card">
+              <img src="./Assets/Images/Projects/Resume-Builder.png" />
+              <div class="cardData">
+                <h3>Resume Builder</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>ReactJS</li>
+                </ul>
+                <div class="projectLinks">
+                  <a
+                    target="_blank"
+                    href="https://github.com/tyagi-achint/Resume-Builder-ReactJs"
+                    class="card-link"
+                    >Code</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://resume-crafter.netlify.app/"
+                    class="card-link"
+                    >Live</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./Assets/Images/Projects/Chat-app.png" />
+              <div class="cardData">
+                <h3>Flutter Chat App</h3>
+                <ul>
+                  <li>Flutter</li>
+                  <li>Dart</li>
+                  <li>Firebase</li>
+                </ul>
+                <div class="projectLinks">
+                  <a
+                    target="_blank"
+                    href="https://github.com/tyagi-achint/Flutter_Chat_App"
+                    class="card-link"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="Certificates">
+          <p class="heading">Certificates</p>
+          <hr class="textUnderline" />
+
+          <div class="carousel-container">
+            <div class="carousel-track">
+              <ul class="cards">
+                <li class="card">
+                  <div
+                    class="cardImg"
+                    style="
+                      background-image: url(Assets/Images/Certificates/Flutter-Udemy.jpg);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Udemy</h3>
+                    <p>Flutter</p>
+                    <a
+                      target="_blank"
+                      href="Assets/Certificates/Flutter-Udemy.pdf"
+                      class="card-link"
+                      >View</a
+                    >
+                  </div>
+                </li>
+                <li class="card">
+                  <div
+                    class="cardImg"
+                    style="
+                      background-image: url(Assets/Images/Certificates/React-Udemy.jpg);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Udemy</h3>
+                    <p>React</p>
+                    <a
+                      target="_blank"
+                      href="Assets/Certificates/Udemy-Python.pdf"
+                      class="card-link"
+                      >View</a
+                    >
+                  </div>
+                </li>
+                <li class="card">
+                  <div
+                    class="cardImg"
+                    style="
+                      background-image: url(Assets/Images/Certificates/octaNet.jpg);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>OctaNet</h3>
+                    <p>Web Development Internship</p>
+                    <a
+                      target="_blank"
+                      href="Assets/Certificates/OctaNet.pdf"
+                      class="card-link"
+                      >View</a
+                    >
+                  </div>
+                </li>
+                <li class="card">
+                  <div
+                    class="cardImg"
+                    style="
+                      background-image: url(Assets/Images/Certificates/FullStack.jpg);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Unschool</h3>
+                    <p>Full Stack Development</p>
+                    <a
+                      target="_blank"
+                      href="Assets/Certificates/Achint Tyagi_Full Stack Development_Unschool Certificate2020.pdf"
+                      class="card-link"
+                      >View</a
+                    >
+                  </div>
+                </li>
+                <li class="card">
+                  <div
+                    class="cardImg"
+                    style="
+                      background-image: url(Assets/Images/Certificates/EthicalHacking.jpg);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Unschool</h3>
+                    <p>Ethical Hacking</p>
+                    <a
+                      target="_blank"
+                      href="Assets/Certificates/Ethical Hacking_Unschool Certificate2020.pdf"
+                      class="card-link"
+                      >View</a
+                    >
+                  </div>
+                </li>
+                <li class="card">
+                  <div
+                    class="cardImg"
+                    style="
+                      background-image: url(Assets/Images/Certificates/ProjectBootstrap.jpg);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Unschool</h3>
+                    <p>Minor Project with BootStrap</p>
+                    <a
+                      target="_blank"
+                      href="Assets/Certificates/Project Completion Certificate_Achint Tyagi_Unschool2020(1).pdf"
+                      class="card-link"
+                      >View</a
+                    >
+                  </div>
+                </li>
+                <li class="card">
+                  <div
+                    class="cardImg"
+                    style="
+                      background-image: url(Assets/Images/Certificates/ProjectReact.jpg);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Unschool</h3>
+                    <p>Major Project with ReactJS</p>
+                    <a
+                      target="_blank"
+                      href="Assets/Certificates/Project Completion Certificate_Achint Tyagi_Unschool2020(2).pdf"
+                      class="card-link"
+                      >View</a
+                    >
+                  </div>
+                </li>
+                <li class="card">
+                  <div
+                    class="cardImg"
+                    style="
+                      background-image: url(Assets/Images/Certificates/Python.jpg);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Udemy</h3>
+                    <p>Python</p>
+                    <a
+                      target="_blank"
+                      href="Assets/Certificates/Udemy-Python.pdf"
+                      class="card-link"
+                      >View</a
+                    >
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="cards">
+                <li class="card">
+                  <div
+                    class="cardImg"
+                    style="
+                      background-image: url(Assets/Images/Certificates/Flutter-Udemy.jpg);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Udemy</h3>
+                    <p>Flutter</p>
+                    <a
+                      target="_blank"
+                      href="Assets/Certificates/Flutter-Udemy.pdf"
+                      class="card-link"
+                      >View</a
+                    >
+                  </div>
+                </li>
+                <li class="card">
+                  <div
+                    class="cardImg"
+                    style="
+                      background-image: url(Assets/Images/Certificates/React-Udemy.jpg);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Udemy</h3>
+                    <p>React</p>
+                    <a
+                      target="_blank"
+                      href="Assets/Certificates/Udemy-Python.pdf"
+                      class="card-link"
+                      >View</a
+                    >
+                  </div>
+                </li>
+                <li class="card">
+                  <div
+                    class="cardImg"
+                    style="
+                      background-image: url(Assets/Images/Certificates/octaNet.jpg);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>OctaNet</h3>
+                    <p>Web Development Internship</p>
+                    <a
+                      target="_blank"
+                      href="Assets/Certificates/OctaNet.pdf"
+                      class="card-link"
+                      >View</a
+                    >
+                  </div>
+                </li>
+                <li class="card">
+                  <div
+                    class="cardImg"
+                    style="
+                      background-image: url(Assets/Images/Certificates/FullStack.jpg);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Unschool</h3>
+                    <p>Full Stack Development</p>
+                    <a
+                      target="_blank"
+                      href="Assets/Certificates/Achint Tyagi_Full Stack Development_Unschool Certificate2020.pdf"
+                      class="card-link"
+                      >View</a
+                    >
+                  </div>
+                </li>
+                <li class="card">
+                  <div
+                    class="cardImg"
+                    style="
+                      background-image: url(Assets/Images/Certificates/EthicalHacking.jpg);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Unschool</h3>
+                    <p>Ethical Hacking</p>
+                    <a
+                      target="_blank"
+                      href="Assets/Certificates/Ethical Hacking_Unschool Certificate2020.pdf"
+                      class="card-link"
+                      >View</a
+                    >
+                  </div>
+                </li>
+                <li class="card">
+                  <div
+                    class="cardImg"
+                    style="
+                      background-image: url(Assets/Images/Certificates/ProjectBootstrap.jpg);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Unschool</h3>
+                    <p>Minor Project with BootStrap</p>
+                    <a
+                      target="_blank"
+                      href="Assets/Certificates/Project Completion Certificate_Achint Tyagi_Unschool2020(1).pdf"
+                      class="card-link"
+                      >View</a
+                    >
+                  </div>
+                </li>
+                <li class="card">
+                  <div
+                    class="cardImg"
+                    style="
+                      background-image: url(Assets/Images/Certificates/ProjectReact.jpg);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Unschool</h3>
+                    <p>Major Project with ReactJS</p>
+                    <a
+                      target="_blank"
+                      href="Assets/Certificates/Project Completion Certificate_Achint Tyagi_Unschool2020(2).pdf"
+                      class="card-link"
+                      >View</a
+                    >
+                  </div>
+                </li>
+                <li class="card">
+                  <div
+                    class="cardImg"
+                    style="
+                      background-image: url(Assets/Images/Certificates/Python.jpg);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Udemy</h3>
+                    <p>Python</p>
+                    <a
+                      target="_blank"
+                      href="Assets/Certificates/Udemy-Python.pdf"
+                      class="card-link"
+                      >View</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="Contact">
+          <p class="heading">Contact</p>
+          <hr class="textUnderline" />
+          <div class="form">
+            <div class="textPart">
+              <p class="contactp1">Get in touch</p>
+              <hr class="textUnderline" />
+
+              <p class="contactp2">
+                If you would like to work with me or just want to get in touch,
+                please feel free to contact me.
+                <span> achinttyagi001@gmail.com</span>
+                <span>Telegram : @achinttyagi</span>
+              </p>
+              <p id="ContactColorText">I'd love to hear from you!</p>
+            </div>
+
+            <form onsubmit="sendEmail(event)">
+              <div class="inputName">
+                <input
+                  type="text"
+                  id="Name"
+                  name="from_name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="inputEmail">
+                <input
+                  type="email"
+                  id="Email"
+                  name="from_email"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+              <textarea
+                id="formMessage"
+                name="message"
+                rows="7"
+                placeholder="Message"
+                required
+              ></textarea>
+              <div class="button">
+                <button type="reset">Clear</button>
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+          <div id="afterForm">
+            <div class="success-msg">
+              <i class="fa fa-check"></i>
+              Your Message has been sent successfully.
+            </div>
+            <p>If you wish to send a new message</p>
+            <button onClick="reloadAfterForm()">Click Me</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <div id="Cursor"></div>
+
+    <div id="ProjectPopUp"></div>
+  </body>
+
+  <!-- Email Script -->
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+  ></script>
+  <script>
+    (function () {
+      emailjs.init("M-pcgKemcsHtYUdJG");
+    })();
+  </script>
+
+  <!-- LordIcon Script -->
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+  <!-- Footer Section -->
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      fetch("./Assets/HTML/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+          var currentYear = new Date().getFullYear();
+          document.getElementById("currentYear").textContent = currentYear;
+        });
+    });
+  </script>
+
+  <!-- Project PopUp -->
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      fetch("./Assets/HTML/projects.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("ProjectPopUp").innerHTML = data;
+
+          const filterButtons = document.querySelectorAll(
+            ".filter-buttons button"
+          );
+          const cards = document.querySelectorAll(".projectCards .card");
+
+          filterButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+              filterButtons.forEach((btn) => btn.classList.remove("active"));
+              button.classList.add("active");
+              const filter = button.dataset.filter;
+
+              cards.forEach((card) => {
+                const tags = card.dataset.tags.split(",");
+
+                const showCard =
+                  filter === "all" ||
+                  (filter === "others" &&
+                    !["flutter", "reactjs", "python", "html"].some((tag) =>
+                      tags.includes(tag)
+                    )) ||
+                  tags.includes(filter);
+
+                card.style.display = showCard ? "block" : "none";
+              });
+            });
+          });
+        });
+    });
+  </script>
+
+  <script src="./Assets/JS/script.js"></script>
+</html>
